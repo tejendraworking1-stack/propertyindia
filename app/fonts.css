@@ -1,0 +1,9 @@
+/* Plus Jakarta Sans – local variable font (OFL). Weight axis 200–800.
+   Import once from app/globals.css:  @import "./fonts.css"; */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}

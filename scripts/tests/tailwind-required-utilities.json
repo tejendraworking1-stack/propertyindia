@@ -1,0 +1,9 @@
+{
+  "_comment": "Utilities that must exist in the compiled CSS in addition to every class found in className attributes. Keep this list in sync when a page builds class names from arrays/constants.",
+  "utilities": [
+    "bg-orange", "bg-orange-2", "bg-orange-l", "bg-cta", "bg-cta-d", "bg-deep", "bg-deep-d", "bg-blue", "bg-blue-d",
+    "bg-nv", "bg-nv-d", "bg-ink", "bg-muted", "bg-line", "bg-bg", "bg-surface", "bg-green", "bg-red", "bg-purple", "bg-gold",
+    "text-deep", "text-muted", "text-orange", "text-cta", "border-line", "bg-surface", "rounded-card", "shadow-card",
+    "sm:grid-cols-4", "sm:grid-cols-6", "lg:grid-cols-5", "lg:grid-cols-9", "h-7", "w-7", "h-10", "w-10"
+  ]
+}

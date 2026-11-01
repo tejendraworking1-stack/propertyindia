@@ -1,0 +1,343 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "./fonts.css";
+
+/* Tailwind 4 is wired to the ORIGINAL tokens below; nothing is re-valued here.
+   Preflight is NOT imported, so browser defaults match the original HTML.
+   Breakpoints: only sm 640 / lg 960 are named; use min-[1280px]: etc. for the rest. */
+@theme inline {
+  --color-*: initial;
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-lg: 960px;
+  --font-sans: var(--font);
+  --radius-r: var(--r);
+  --radius-card: var(--r-card);
+  --radius-chip: var(--r-chip);
+  --radius-panel: var(--r-panel);
+  --color-surface: var(--surface);
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-bg-3: var(--bg-3);
+  --color-bg-4: var(--bg-4);
+  --color-bg-5: var(--bg-5);
+  --color-bg-6: var(--bg-6);
+  --color-bg-7: var(--bg-7);
+  --color-bg-8: var(--bg-8);
+  --color-bg-9: var(--bg-9);
+  --color-chip: var(--chip);
+  --color-bg-10: var(--bg-10);
+  --color-black: var(--black);
+  --color-black-soft: var(--black-soft);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-ink-4: var(--ink-4);
+  --color-ink-5: var(--ink-5);
+  --color-ink-6: var(--ink-6);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-muted-3: var(--muted-3);
+  --color-muted-4: var(--muted-4);
+  --color-muted-5: var(--muted-5);
+  --color-muted-6: var(--muted-6);
+  --color-text-soft: var(--text-soft);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-line-3: var(--line-3);
+  --color-line-4: var(--line-4);
+  --color-line-5: var(--line-5);
+  --color-line-6: var(--line-6);
+  --color-line-7: var(--line-7);
+  --color-line-8: var(--line-8);
+  --color-line-9: var(--line-9);
+  --color-mm-line: var(--mm-line);
+  --color-line-10: var(--line-10);
+  --color-line-11: var(--line-11);
+  --color-line-12: var(--line-12);
+  --color-line-13: var(--line-13);
+  --color-line-14: var(--line-14);
+  --color-deep: var(--deep);
+  --color-btn: var(--btn);
+  --color-deep-d: var(--deep-d);
+  --color-btn-d: var(--btn-d);
+  --color-nv: var(--nv);
+  --color-nv-d: var(--nv-d);
+  --color-blue: var(--blue);
+  --color-blue-d: var(--blue-d);
+  --color-chip-ink: var(--chip-ink);
+  --color-sky: var(--sky);
+  --color-indigo: var(--indigo);
+  --color-orange: var(--orange);
+  --color-orange-2: var(--orange-2);
+  --color-orange-l: var(--orange-l);
+  --color-coral: var(--coral);
+  --color-purple: var(--purple);
+  --color-purple-l: var(--purple-l);
+  --color-gold: var(--gold);
+  --color-gold-l: var(--gold-l);
+  --color-green: var(--green);
+  --color-green-l: var(--green-l);
+  --color-red: var(--red);
+  --color-red-2: var(--red-2);
+  --color-rose: var(--rose);
+  --color-cta: var(--cta);
+  --color-cta-d: var(--cta-d);
+}
+
+/* Shadows reference the original tokens directly (avoids a self-referencing theme variable). */
+@utility shadow-card {
+  box-shadow: var(--shadow-card);
+}
+@utility shadow-base {
+  box-shadow: var(--shadow);
+}
+
+/* ==========================================================================
+   Design tokens – copied verbatim from propertyindia-home-v13-contrast.html
+   (every :root block, in original source order, so overrides resolve identically).
+   Do not rename or change values without approval (colour changes need approval).
+   ========================================================================== */
+:root {
+  color-scheme:only light;
+  box-sizing:border-box;
+  --r-card:6px;
+  --r-chip:6px;
+  --r-panel:12px;
+  --sm-r-field:12px;
+  --sm-gap:8px;
+  --sm-ear:8px;
+  --sec-gap:12px;
+  --sec-pad-x:12px;
+  --sec-pad-top:14px;
+  --sec-pad-bottom:8px;
+  --seg-h:40px;
+  --tabs-h:56px;
+  --frame-p:2px;
+}
+:root {
+  padding-top:0;
+  padding-bottom:0;
+}
+@media (min-width:640px) {
+  :root {
+    --r-card:12px;
+    --r-chip:6px;
+    --r-panel:20px;
+    --sm-r-field:12px;
+    --sm-ear:10px;
+    --sec-gap:14px;
+    --sec-pad-x:20px;
+    --sec-pad-top:20px;
+    --sec-pad-bottom:14px;
+    --hero-img-h:clamp(300px,42vw,360px);
+    --sm-tab-h:52px;
+    --seg-h:46px;
+    --seg-over:24px;
+    --tabs-h:60px;
+  }
+}
+@media (min-width:960px) {
+  :root {
+    --r-card:12px;
+    --r-chip:6px;
+    --r-panel:20px;
+    --sm-r-field:12px;
+    --sm-gap:12px;
+    --sm-ear:14px;
+    --sec-gap:16px;
+    --sec-pad-x:24px;
+    --sec-pad-top:24px;
+    --sec-pad-bottom:18px;
+    --hero-img-h:clamp(380px,32vw,440px);
+    --sm-tab-h:56px;
+    --seg-h:52px;
+    --seg-over:26px;
+    --frame-p:3px;
+  }
+}
+@media (max-width:349px) {
+  :root {
+    --sm-tab-h:46px;
+  }
+}
+:root {
+  --hero-img-h:clamp(270px,23vw,320px);
+}
+@media (min-width:640px) and (max-width:959px) {
+  :root {
+    --hero-img-h:clamp(230px,31vw,270px);
+  }
+}
+@media (max-width:639px) {
+  :root {
+    --seg-h:54px;
+    --hero-img-h:44vw;
+  }
+}
+:root {
+  /* Surfaces */
+  --surface:#ffffff;
+  --bg:#f4f7fc;
+  --bg-2:#f4f7fb;
+  --bg-3:#f4f6fb;
+  --bg-4:#eef1f6;
+  --bg-5:#eaf0f8;
+  --bg-6:#edf4fc;
+  --bg-7:#eef4fc;
+  --bg-8:#f1f6fd;
+  --bg-9:#dbe8fb;
+  --chip:#eaf2ff;
+  --bg-10:#eaf1ff;
+  --black:#000000;
+  --black-soft:#1a1a1a;
+  /* Ink (text) */
+  --ink:#0f1b33;
+  --ink-2:#172033;
+  --ink-3:#243050;
+  --ink-4:#33415c;
+  --ink-5:#3a4660;
+  --ink-6:#0b2a6b;
+  /* Muted text */
+  --muted:#5d6b85;
+  --muted-2:#5a6b88;
+  --muted-3:#6b7690;
+  --muted-4:#8a96ad;
+  --muted-5:#97a3ba;
+  --muted-6:#9aa6bb;
+  --text-soft:#c3d2e8;
+  /* Lines and borders */
+  --line:#e3e9f3;
+  --line-2:#e3e8f0;
+  --line-3:#e3e8f1;
+  --line-4:#dce4ef;
+  --line-5:#d7e0ec;
+  --line-6:#d9e0e8;
+  --line-7:#d5deeb;
+  --line-8:#d3dfef;
+  --line-9:#cfd9e8;
+  --mm-line:#cdd6e6;
+  --line-10:#cbd5e3;
+  --line-11:#c9d6e8;
+  --line-12:#dbe6f7;
+  --line-13:#b8c4d6;
+  --line-14:#afbcd1;
+  /* Brand blues */
+  --deep:#174a8b;
+  --btn:#174a8b;
+  --deep-d:#123b70;
+  --btn-d:#123b70;
+  --nv:#0f2f5c;
+  --nv-d:#0a2347;
+  --blue:#0b6cf0;
+  --blue-d:#0955c0;
+  --chip-ink:#0b5ad0;
+  --sky:#0ea5ff;
+  --indigo:#4338ca;
+  /* Accents */
+  --orange:#f58220;
+  --orange-2:#f28b1c;
+  --orange-l:#ffa24d;
+  --coral:#ff6a3d;
+  --purple:#7c3aed;
+  --purple-l:#b794ff;
+  --gold:#bdae88;
+  --gold-l:#e2c98e;
+  /* Status */
+  --green:#16a34a;
+  --green-l:#4ade80;
+  --red:#b42318;
+  --red-2:#d92d20;
+  --rose:#e11d48;
+  --shadow:0 6px 24px rgba(20,40,90,.08);
+  --shadow-card:0 2px 10px rgba(20,40,90,.10);
+  --r:20px;
+  --font:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mm-w:280px;
+  --mm-btn-h:42px;
+  --mm-btn-r:12px;
+  --seg-over:calc(var(--seg-h) + 10px);
+  --sm-tab-h:0px;
+  --cta:#c45506;
+  --cta-d:#a94804;
+}
+@media (max-width:340px) {
+  :root {
+    --hero-img-h:52vw;
+  }
+}
+
+/* ==========================================================================
+   Global base rules – copied from the original stylesheet (same values).
+   Tailwind preflight is disabled (tailwind.config.ts) so browser defaults
+   render exactly as in the original HTML.
+   ========================================================================== */
+@layer base {
+  *,*::before,*::after {
+    box-sizing:border-box;
+  }
+  html {
+    scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px);
+    scroll-behavior:smooth;
+  }
+  body {
+    margin:0;
+    font-family:var(--font);
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  a {
+    color:inherit;
+    text-decoration:none;
+  }
+  button {
+    font:inherit;
+    cursor:pointer;
+    border:0;
+    color:inherit;
+  }
+  svg {
+    width:1.25em;
+    height:1.25em;
+    flex:none;
+    fill:none;
+    stroke:currentColor;
+    stroke-width:1.8;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+  :focus-visible {
+    outline:3px solid var(--orange);
+    outline-offset:2px;
+    border-radius:6px;
+  }
+  @media (min-width:960px) {
+    body {
+      padding-bottom:0;
+    }
+  }
+  html,body {
+    max-width:100%;
+    overflow-x:hidden;
+    overflow-x:clip;
+  }
+  :root {
+    padding-top:0;
+    padding-bottom:0;
+  }
+  @media (prefers-reduced-motion:reduce) {
+    * {
+      transition:none !important;
+      scroll-behavior:auto !important;
+    }
+  }
+  @media (max-width:959px) {
+    body {
+      padding-bottom:68px;
+      line-height:1.4;
+    }
+  }
+}

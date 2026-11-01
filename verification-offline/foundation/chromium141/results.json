@@ -1,0 +1,773 @@
+{
+  "suite": "foundation-preview",
+  "tag": "chromium141",
+  "url": "http://localhost:3100/dev/foundation",
+  "browser": "141.0.7390.37",
+  "browserExecutable": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+  "browserSource": "playwright-bundled",
+  "widths": [
+    320,
+    360,
+    380,
+    414,
+    430,
+    639,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "fontSha256": "4c5552ecc1230e6dfdf6e8755d24436fca395ad9f4ecb25287ab3e9ff7a9e68d",
+  "results": [
+    {
+      "name": "320px no horizontal overflow",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "320px Plus Jakarta Sans loaded (local)",
+      "ok": true,
+      "detail": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    },
+    {
+      "name": "320px 35 icons rendered",
+      "ok": true,
+      "detail": "found 35"
+    },
+    {
+      "name": "320px token --orange",
+      "ok": true,
+      "detail": "#f58220"
+    },
+    {
+      "name": "320px token --orange-2",
+      "ok": true,
+      "detail": "#f28b1c"
+    },
+    {
+      "name": "320px token --deep",
+      "ok": true,
+      "detail": "#174a8b"
+    },
+    {
+      "name": "320px token --cta",
+      "ok": true,
+      "detail": "#c45506"
+    },
+    {
+      "name": "320px token --blue",
+      "ok": true,
+      "detail": "#0b6cf0"
+    },
+    {
+      "name": "320px token --bg",
+      "ok": true,
+      "detail": "#f4f7fc"
+    },
+    {
+      "name": "320px token --surface",
+      "ok": true,
+      "detail": "#ffffff"
+    },
+    {
+      "name": "320px token --ink",
+      "ok": true,
+      "detail": "#0f1b33"
+    },
+    {
+      "name": "320px token --r-card (responsive)",
+      "ok": true,
+      "detail": "6px"
+    },
+    {
+      "name": "320px font served from local file (byte-identical, same origin)",
+      "ok": true,
+      "detail": "http://localhost:3100/fonts/PlusJakartaSans-VariableFont_wght.ttf -> 200, 173760 B, sha256 4c5552ecc123 vs local 4c5552ecc123"
+    },
+    {
+      "name": "320px no external requests (no Google Fonts/CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "320px no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360px no horizontal overflow",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "360px Plus Jakarta Sans loaded (local)",
+      "ok": true,
+      "detail": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    },
+    {
+      "name": "360px 35 icons rendered",
+      "ok": true,
+      "detail": "found 35"
+    },
+    {
+      "name": "360px token --orange",
+      "ok": true,
+      "detail": "#f58220"
+    },
+    {
+      "name": "360px token --orange-2",
+      "ok": true,
+      "detail": "#f28b1c"
+    },
+    {
+      "name": "360px token --deep",
+      "ok": true,
+      "detail": "#174a8b"
+    },
+    {
+      "name": "360px token --cta",
+      "ok": true,
+      "detail": "#c45506"
+    },
+    {
+      "name": "360px token --blue",
+      "ok": true,
+      "detail": "#0b6cf0"
+    },
+    {
+      "name": "360px token --bg",
+      "ok": true,
+      "detail": "#f4f7fc"
+    },
+    {
+      "name": "360px token --surface",
+      "ok": true,
+      "detail": "#ffffff"
+    },
+    {
+      "name": "360px token --ink",
+      "ok": true,
+      "detail": "#0f1b33"
+    },
+    {
+      "name": "360px token --r-card (responsive)",
+      "ok": true,
+      "detail": "6px"
+    },
+    {
+      "name": "360px font served from local file (byte-identical, same origin)",
+      "ok": true,
+      "detail": "http://localhost:3100/fonts/PlusJakartaSans-VariableFont_wght.ttf -> 200, 173760 B, sha256 4c5552ecc123 vs local 4c5552ecc123"
+    },
+    {
+      "name": "360px no external requests (no Google Fonts/CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "360px no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "380px no horizontal overflow",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "380px Plus Jakarta Sans loaded (local)",
+      "ok": true,
+      "detail": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    },
+    {
+      "name": "380px 35 icons rendered",
+      "ok": true,
+      "detail": "found 35"
+    },
+    {
+      "name": "380px token --orange",
+      "ok": true,
+      "detail": "#f58220"
+    },
+    {
+      "name": "380px token --orange-2",
+      "ok": true,
+      "detail": "#f28b1c"
+    },
+    {
+      "name": "380px token --deep",
+      "ok": true,
+      "detail": "#174a8b"
+    },
+    {
+      "name": "380px token --cta",
+      "ok": true,
+      "detail": "#c45506"
+    },
+    {
+      "name": "380px token --blue",
+      "ok": true,
+      "detail": "#0b6cf0"
+    },
+    {
+      "name": "380px token --bg",
+      "ok": true,
+      "detail": "#f4f7fc"
+    },
+    {
+      "name": "380px token --surface",
+      "ok": true,
+      "detail": "#ffffff"
+    },
+    {
+      "name": "380px token --ink",
+      "ok": true,
+      "detail": "#0f1b33"
+    },
+    {
+      "name": "380px token --r-card (responsive)",
+      "ok": true,
+      "detail": "6px"
+    },
+    {
+      "name": "380px font served from local file (byte-identical, same origin)",
+      "ok": true,
+      "detail": "http://localhost:3100/fonts/PlusJakartaSans-VariableFont_wght.ttf -> 200, 173760 B, sha256 4c5552ecc123 vs local 4c5552ecc123"
+    },
+    {
+      "name": "380px no external requests (no Google Fonts/CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "380px no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "414px no horizontal overflow",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "414px Plus Jakarta Sans loaded (local)",
+      "ok": true,
+      "detail": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    },
+    {
+      "name": "414px 35 icons rendered",
+      "ok": true,
+      "detail": "found 35"
+    },
+    {
+      "name": "414px token --orange",
+      "ok": true,
+      "detail": "#f58220"
+    },
+    {
+      "name": "414px token --orange-2",
+      "ok": true,
+      "detail": "#f28b1c"
+    },
+    {
+      "name": "414px token --deep",
+      "ok": true,
+      "detail": "#174a8b"
+    },
+    {
+      "name": "414px token --cta",
+      "ok": true,
+      "detail": "#c45506"
+    },
+    {
+      "name": "414px token --blue",
+      "ok": true,
+      "detail": "#0b6cf0"
+    },
+    {
+      "name": "414px token --bg",
+      "ok": true,
+      "detail": "#f4f7fc"
+    },
+    {
+      "name": "414px token --surface",
+      "ok": true,
+      "detail": "#ffffff"
+    },
+    {
+      "name": "414px token --ink",
+      "ok": true,
+      "detail": "#0f1b33"
+    },
+    {
+      "name": "414px token --r-card (responsive)",
+      "ok": true,
+      "detail": "6px"
+    },
+    {
+      "name": "414px font served from local file (byte-identical, same origin)",
+      "ok": true,
+      "detail": "http://localhost:3100/fonts/PlusJakartaSans-VariableFont_wght.ttf -> 200, 173760 B, sha256 4c5552ecc123 vs local 4c5552ecc123"
+    },
+    {
+      "name": "414px no external requests (no Google Fonts/CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "414px no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430px no horizontal overflow",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "430px Plus Jakarta Sans loaded (local)",
+      "ok": true,
+      "detail": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    },
+    {
+      "name": "430px 35 icons rendered",
+      "ok": true,
+      "detail": "found 35"
+    },
+    {
+      "name": "430px token --orange",
+      "ok": true,
+      "detail": "#f58220"
+    },
+    {
+      "name": "430px token --orange-2",
+      "ok": true,
+      "detail": "#f28b1c"
+    },
+    {
+      "name": "430px token --deep",
+      "ok": true,
+      "detail": "#174a8b"
+    },
+    {
+      "name": "430px token --cta",
+      "ok": true,
+      "detail": "#c45506"
+    },
+    {
+      "name": "430px token --blue",
+      "ok": true,
+      "detail": "#0b6cf0"
+    },
+    {
+      "name": "430px token --bg",
+      "ok": true,
+      "detail": "#f4f7fc"
+    },
+    {
+      "name": "430px token --surface",
+      "ok": true,
+      "detail": "#ffffff"
+    },
+    {
+      "name": "430px token --ink",
+      "ok": true,
+      "detail": "#0f1b33"
+    },
+    {
+      "name": "430px token --r-card (responsive)",
+      "ok": true,
+      "detail": "6px"
+    },
+    {
+      "name": "430px font served from local file (byte-identical, same origin)",
+      "ok": true,
+      "detail": "http://localhost:3100/fonts/PlusJakartaSans-VariableFont_wght.ttf -> 200, 173760 B, sha256 4c5552ecc123 vs local 4c5552ecc123"
+    },
+    {
+      "name": "430px no external requests (no Google Fonts/CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "430px no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "639px no horizontal overflow",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "639px Plus Jakarta Sans loaded (local)",
+      "ok": true,
+      "detail": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    },
+    {
+      "name": "639px 35 icons rendered",
+      "ok": true,
+      "detail": "found 35"
+    },
+    {
+      "name": "639px token --orange",
+      "ok": true,
+      "detail": "#f58220"
+    },
+    {
+      "name": "639px token --orange-2",
+      "ok": true,
+      "detail": "#f28b1c"
+    },
+    {
+      "name": "639px token --deep",
+      "ok": true,
+      "detail": "#174a8b"
+    },
+    {
+      "name": "639px token --cta",
+      "ok": true,
+      "detail": "#c45506"
+    },
+    {
+      "name": "639px token --blue",
+      "ok": true,
+      "detail": "#0b6cf0"
+    },
+    {
+      "name": "639px token --bg",
+      "ok": true,
+      "detail": "#f4f7fc"
+    },
+    {
+      "name": "639px token --surface",
+      "ok": true,
+      "detail": "#ffffff"
+    },
+    {
+      "name": "639px token --ink",
+      "ok": true,
+      "detail": "#0f1b33"
+    },
+    {
+      "name": "639px token --r-card (responsive)",
+      "ok": true,
+      "detail": "6px"
+    },
+    {
+      "name": "639px font served from local file (byte-identical, same origin)",
+      "ok": true,
+      "detail": "http://localhost:3100/fonts/PlusJakartaSans-VariableFont_wght.ttf -> 200, 173760 B, sha256 4c5552ecc123 vs local 4c5552ecc123"
+    },
+    {
+      "name": "639px no external requests (no Google Fonts/CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "639px no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768px no horizontal overflow",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "768px Plus Jakarta Sans loaded (local)",
+      "ok": true,
+      "detail": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    },
+    {
+      "name": "768px 35 icons rendered",
+      "ok": true,
+      "detail": "found 35"
+    },
+    {
+      "name": "768px token --orange",
+      "ok": true,
+      "detail": "#f58220"
+    },
+    {
+      "name": "768px token --orange-2",
+      "ok": true,
+      "detail": "#f28b1c"
+    },
+    {
+      "name": "768px token --deep",
+      "ok": true,
+      "detail": "#174a8b"
+    },
+    {
+      "name": "768px token --cta",
+      "ok": true,
+      "detail": "#c45506"
+    },
+    {
+      "name": "768px token --blue",
+      "ok": true,
+      "detail": "#0b6cf0"
+    },
+    {
+      "name": "768px token --bg",
+      "ok": true,
+      "detail": "#f4f7fc"
+    },
+    {
+      "name": "768px token --surface",
+      "ok": true,
+      "detail": "#ffffff"
+    },
+    {
+      "name": "768px token --ink",
+      "ok": true,
+      "detail": "#0f1b33"
+    },
+    {
+      "name": "768px token --r-card (responsive)",
+      "ok": true,
+      "detail": "12px"
+    },
+    {
+      "name": "768px font served from local file (byte-identical, same origin)",
+      "ok": true,
+      "detail": "http://localhost:3100/fonts/PlusJakartaSans-VariableFont_wght.ttf -> 200, 173760 B, sha256 4c5552ecc123 vs local 4c5552ecc123"
+    },
+    {
+      "name": "768px no external requests (no Google Fonts/CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "768px no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024px no horizontal overflow",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "1024px Plus Jakarta Sans loaded (local)",
+      "ok": true,
+      "detail": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    },
+    {
+      "name": "1024px 35 icons rendered",
+      "ok": true,
+      "detail": "found 35"
+    },
+    {
+      "name": "1024px token --orange",
+      "ok": true,
+      "detail": "#f58220"
+    },
+    {
+      "name": "1024px token --orange-2",
+      "ok": true,
+      "detail": "#f28b1c"
+    },
+    {
+      "name": "1024px token --deep",
+      "ok": true,
+      "detail": "#174a8b"
+    },
+    {
+      "name": "1024px token --cta",
+      "ok": true,
+      "detail": "#c45506"
+    },
+    {
+      "name": "1024px token --blue",
+      "ok": true,
+      "detail": "#0b6cf0"
+    },
+    {
+      "name": "1024px token --bg",
+      "ok": true,
+      "detail": "#f4f7fc"
+    },
+    {
+      "name": "1024px token --surface",
+      "ok": true,
+      "detail": "#ffffff"
+    },
+    {
+      "name": "1024px token --ink",
+      "ok": true,
+      "detail": "#0f1b33"
+    },
+    {
+      "name": "1024px token --r-card (responsive)",
+      "ok": true,
+      "detail": "12px"
+    },
+    {
+      "name": "1024px font served from local file (byte-identical, same origin)",
+      "ok": true,
+      "detail": "http://localhost:3100/fonts/PlusJakartaSans-VariableFont_wght.ttf -> 200, 173760 B, sha256 4c5552ecc123 vs local 4c5552ecc123"
+    },
+    {
+      "name": "1024px no external requests (no Google Fonts/CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1024px no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280px no horizontal overflow",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "1280px Plus Jakarta Sans loaded (local)",
+      "ok": true,
+      "detail": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    },
+    {
+      "name": "1280px 35 icons rendered",
+      "ok": true,
+      "detail": "found 35"
+    },
+    {
+      "name": "1280px token --orange",
+      "ok": true,
+      "detail": "#f58220"
+    },
+    {
+      "name": "1280px token --orange-2",
+      "ok": true,
+      "detail": "#f28b1c"
+    },
+    {
+      "name": "1280px token --deep",
+      "ok": true,
+      "detail": "#174a8b"
+    },
+    {
+      "name": "1280px token --cta",
+      "ok": true,
+      "detail": "#c45506"
+    },
+    {
+      "name": "1280px token --blue",
+      "ok": true,
+      "detail": "#0b6cf0"
+    },
+    {
+      "name": "1280px token --bg",
+      "ok": true,
+      "detail": "#f4f7fc"
+    },
+    {
+      "name": "1280px token --surface",
+      "ok": true,
+      "detail": "#ffffff"
+    },
+    {
+      "name": "1280px token --ink",
+      "ok": true,
+      "detail": "#0f1b33"
+    },
+    {
+      "name": "1280px token --r-card (responsive)",
+      "ok": true,
+      "detail": "12px"
+    },
+    {
+      "name": "1280px font served from local file (byte-identical, same origin)",
+      "ok": true,
+      "detail": "http://localhost:3100/fonts/PlusJakartaSans-VariableFont_wght.ttf -> 200, 173760 B, sha256 4c5552ecc123 vs local 4c5552ecc123"
+    },
+    {
+      "name": "1280px no external requests (no Google Fonts/CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280px no console/network errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440px no horizontal overflow",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "1440px Plus Jakarta Sans loaded (local)",
+      "ok": true,
+      "detail": "\"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif"
+    },
+    {
+      "name": "1440px 35 icons rendered",
+      "ok": true,
+      "detail": "found 35"
+    },
+    {
+      "name": "1440px token --orange",
+      "ok": true,
+      "detail": "#f58220"
+    },
+    {
+      "name": "1440px token --orange-2",
+      "ok": true,
+      "detail": "#f28b1c"
+    },
+    {
+      "name": "1440px token --deep",
+      "ok": true,
+      "detail": "#174a8b"
+    },
+    {
+      "name": "1440px token --cta",
+      "ok": true,
+      "detail": "#c45506"
+    },
+    {
+      "name": "1440px token --blue",
+      "ok": true,
+      "detail": "#0b6cf0"
+    },
+    {
+      "name": "1440px token --bg",
+      "ok": true,
+      "detail": "#f4f7fc"
+    },
+    {
+      "name": "1440px token --surface",
+      "ok": true,
+      "detail": "#ffffff"
+    },
+    {
+      "name": "1440px token --ink",
+      "ok": true,
+      "detail": "#0f1b33"
+    },
+    {
+      "name": "1440px token --r-card (responsive)",
+      "ok": true,
+      "detail": "12px"
+    },
+    {
+      "name": "1440px font served from local file (byte-identical, same origin)",
+      "ok": true,
+      "detail": "http://localhost:3100/fonts/PlusJakartaSans-VariableFont_wght.ttf -> 200, 173760 B, sha256 4c5552ecc123 vs local 4c5552ecc123"
+    },
+    {
+      "name": "1440px no external requests (no Google Fonts/CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1440px no console/network errors",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}
