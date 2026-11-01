@@ -28,12 +28,12 @@ const CSS = [
   ["field-sizing", /field-sizing\s*:/, 123],
   ["backdrop-filter", /backdrop-filter\s*:/, 76],
   ["text-wrap", /text-wrap\s*:/, 114],
-  ["CSS nesting (&)", /\{[^{}]*\n?\s*&[\s:.>\[]/, 120],
+  ["CSS nesting (&)", /\{[^{}]*\n?\s*&[\s:.>[]/, 120],
   ["@starting-style / transition-behavior", /@starting-style|transition-behavior/, 117],
   ["light-dark()", /light-dark\(/, 123],
 ];
 const JS = [
-  ["optional chaining / nullish (?. ??)", /\?\.[a-zA-Z_(\[]|\?\?/, 80],
+  ["optional chaining / nullish (?. ??)", /\?\.[a-zA-Z_([]|\?\?/, 80],
   ["replaceAll", /\.replaceAll\(/, 85],
   [".at()", /\.at\(-?\d/, 92],
   ["structuredClone", /structuredClone\(/, 98],

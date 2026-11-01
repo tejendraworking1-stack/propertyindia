@@ -82,7 +82,7 @@ for (const w of WIDTHS) {
   page.on("pageerror", (e) => problems.push("pageerror: " + String(e).slice(0, 140)));
   page.on("requestfailed", (r) => problems.push("requestfailed: " + r.url().slice(0, 140)));
   page.on("response", (r) => r.status() >= 400 && problems.push(`HTTP ${r.status()}: ${r.url().slice(0, 140)}`));
-  await page.goto(url, { waitUntil: "networkidle" });
+  await page.goto(url, { waitUntil: "load" });
   await page.evaluate(() => document.fonts.ready);
   const m = await page.evaluate((vars) => {
     const r = getComputedStyle(document.documentElement);

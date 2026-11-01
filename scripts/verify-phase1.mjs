@@ -233,6 +233,7 @@ else if (!blocker) {
 } else record({ name: N.chrome111, gate: false, status: "NOT RUN", detail: "blocked earlier; optional" });
 
 await withServer("8-dev-server", N.devUp, N.devStop, ["run", "dev"], async () => { foundationSuite(N.devSuite, "dev-bundled-chromium", { expectMajor: CHROMIUM_MAJOR }); });
+run("3b-rebuild-before-production-server", "npm", ["run", "build"]);
 await withServer("9-production-server", N.prodUp, N.prodStop, ["run", "start"], async () => {
   foundationSuite(N.prodSuite, "prod-bundled-chromium", { expectMajor: CHROMIUM_MAJOR });
   foundationSuite(N.androidSuite, "android-chrome-emulation", { expectMajor: CHROMIUM_MAJOR, gate: false, extraEnv: { EMULATE: "android" } });

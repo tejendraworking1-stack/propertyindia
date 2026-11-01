@@ -7,7 +7,7 @@ import globals from "globals";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const compat = new FlatCompat({ baseDirectory: __dirname });
 
-export default [
+const config = [
   // Not project source: build output, downloaded browsers, test artefacts, static assets and the
   // archived Tailwind 3.4 fallback (never built). Everything else (app, components, scripts, configs) IS linted.
   {
@@ -30,3 +30,5 @@ export default [
     languageOptions: { globals: { ...globals.node, ...globals.browser } },
   },
 ];
+
+export default config;

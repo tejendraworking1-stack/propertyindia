@@ -21,9 +21,9 @@ for (const f of data) {
   const top = relative(process.cwd(), f.filePath).split(sep)[0];
   for (const m of f.messages) {
     const d = (byDir[top] ??= { e: 0, w: 0 });
-    m.severity === 2 ? d.e++ : d.w++;
+    if (m.severity === 2) d.e++; else d.w++;
     const rule = (byRule[m.ruleId ?? "(parse/config)"] ??= { e: 0, w: 0 });
-    m.severity === 2 ? rule.e++ : rule.w++;
+    if (m.severity === 2) rule.e++; else rule.w++;
   }
 }
 const rows = (o, n = 25) => Object.entries(o).sort((a, b) => b[1].e + b[1].w - (a[1].e + a[1].w)).slice(0, n).map(([k, v]) => `| ${k} | ${v.e} | ${v.w} |`).join("\n");

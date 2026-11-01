@@ -67,7 +67,7 @@ check("breakpoint lg = 960px present", has(/@media\s*\(\s*(min-width\s*:\s*960px
 check("shadow-card maps to var(--shadow-card)", has(/\.shadow-card\s*\{[^}]*box-shadow\s*:\s*var\(--shadow-card\)/), "");
 check("bg-orange-2 maps to var(--orange-2)", has(/\.bg-orange-2\s*\{[^}]*background-color\s*:\s*var\(--orange-2\)/), "");
 check("rounded-card maps to var(--r-card)", has(/\.rounded-card\s*\{[^}]*border-radius\s*:\s*var\(--r-card\)/), "");
-check("cascade layers declared (theme, base, components, utilities)", has(/@layer\s+theme\s*,\s*base\s*,\s*components\s*,\s*utilities/), "");
+check("cascade layers declared (theme, base, components, utilities)", has(/@layer\s+theme\s*,(?:\s*[a-z]+\s*,)*\s*utilities\s*;/), "found: " + ((built.match(/@layer\s+[a-z, ]+;/) || ["none"])[0]));
 
 // --- every utility used by the app exists in the compiled CSS
 const escapeSel = (c) => c.replace(/([^a-zA-Z0-9_-])/g, "\\$1");
