@@ -11,6 +11,7 @@ import { createHash } from "node:crypto";
 const url = process.argv[2] ?? "http://localhost:3000/dev/foundation";
 const tag = process.argv[3] ?? "run";
 const WIDTHS = [320, 360, 380, 414, 430, 639, 768, 1024, 1280, 1440];
+const hex = (x) => (typeof x === "string" ? x.trim().toLowerCase().replace(/^#([0-9a-f])([0-9a-f])([0-9a-f])$/, "#$1$1$2$2$3$3") : x);
 const EXPECT_VARS = {
   "--orange": "#f58220", "--orange-2": "#f28b1c", "--deep": "#174a8b", "--cta": "#c45506",
   "--blue": "#0b6cf0", "--bg": "#f4f7fc", "--surface": "#ffffff", "--ink": "#0f1b33",
@@ -103,7 +104,7 @@ for (const w of WIDTHS) {
   check(`${w}px utilities override base svg rule (icon grid 28px, logo 40px)`, Math.round(m.iconW) === 28 && Math.round(m.logoW) === 40, `grid ${m.iconW}px, logo ${m.logoW}px (base rule alone would give 20px)`);
   check(`${w}px border utility renders a visible solid border`, m.borderStyle === "solid 1px", m.borderStyle);
   check(`${w}px 35 icons rendered`, m.icons === 35, `found ${m.icons}`);
-  for (const [k, v] of Object.entries(EXPECT_VARS)) check(`${w}px token ${k}`, m.vars[k] === v, m.vars[k]);
+  for (const [k, v] of Object.entries(EXPECT_VARS)) check(`${w}px token ${k}`, hex(m.vars[k]) === hex(v), m.vars[k]);
   // responsive token: 6px below 640px, 12px from 640px (original @media rule)
   check(`${w}px token --r-card (responsive)`, m.rcard === (w >= 640 ? "12px" : "6px"), m.rcard);
   // font provenance: served from our own origin, 200, byte-identical (sha256) to the local file

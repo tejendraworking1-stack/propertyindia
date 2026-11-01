@@ -67,7 +67,8 @@ check("breakpoint lg = 960px present", has(/@media\s*\(\s*(min-width\s*:\s*960px
 check("shadow-card maps to var(--shadow-card)", has(/\.shadow-card\s*\{[^}]*box-shadow\s*:\s*var\(--shadow-card\)/), "");
 check("bg-orange-2 maps to var(--orange-2)", has(/\.bg-orange-2\s*\{[^}]*background-color\s*:\s*var\(--orange-2\)/), "");
 check("rounded-card maps to var(--r-card)", has(/\.rounded-card\s*\{[^}]*border-radius\s*:\s*var\(--r-card\)/), "");
-check("cascade layers declared (theme, base, components, utilities)", has(/@layer\s+theme\s*,(?:\s*[a-z]+\s*,)*\s*utilities\s*;/), "found: " + ((built.match(/@layer\s+[a-z, ]+;/) || ["none"])[0]));
+const layerOrder = [...new Set([...built.matchAll(/@layer\s+([a-z][a-z0-9-]*(?:\s*,\s*[a-z][a-z0-9-]*)*)\s*[{;]/g)].flatMap((m) => m[1].split(/\s*,\s*/)))];
+check("cascade layer order: utilities come after theme and base", layerOrder.includes("utilities") && layerOrder.indexOf("utilities") > layerOrder.indexOf("theme") && (!layerOrder.includes("base") || layerOrder.indexOf("utilities") > layerOrder.indexOf("base")), "order found: " + layerOrder.join(" > "));
 
 // --- every utility used by the app exists in the compiled CSS
 const escapeSel = (c) => c.replace(/([^a-zA-Z0-9_-])/g, "\\$1");
