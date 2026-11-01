@@ -1,0 +1,26 @@
+name: Phase 1 verification
+on: workflow_dispatch
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run Phase 1 verification
+        run: node scripts/verify-phase1.mjs
+      - name: Upload verification results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verification-${{ matrix.os }}
+          path: |
+            verification
+            package-lock.json
+          if-no-files-found: warn
