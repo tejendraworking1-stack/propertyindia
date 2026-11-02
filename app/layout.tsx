@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import "./home.css"; // original homepage stylesheet, carried over verbatim
+import "./part1-overrides.css"; // approved Part 1 deviations (Featured: 4 cards at >=1280px)
 
 const TITLE = "PropertyIndia – Rent, PG & Land Lease | Zero Brokerage";
 const DESCRIPTION =

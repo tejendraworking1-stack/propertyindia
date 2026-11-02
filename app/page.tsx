@@ -1,9 +1,22 @@
-/* Phase 1 placeholder. Sections are migrated in Phase 2 (static) and Phase 3 (interactive). */
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import SearchSection from "@/components/SearchSection";
+import WhyChoose from "@/components/WhyChoose";
+import FeaturedProperties from "@/components/FeaturedProperties";
+
+/* Homepage – Part 1: Header, Hero, Search (4 tabs), Why Choose, Featured Properties.
+   Part 2 (Popular Locations, Recently Added, How it works, List CTA, Footer, bottom nav, Ask Property AI) follows
+   after written approval of Part 1. */
 export default function HomePage() {
   return (
-    <main className="mx-auto max-w-[1200px] px-[18px] py-10">
-      <h1 className="text-[1.5rem] font-extrabold text-deep">PropertyIndia</h1>
-      <p className="text-muted">Homepage migration in progress – Phase 1 scaffold.</p>
-    </main>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <SearchSection />
+        <WhyChoose />
+        <FeaturedProperties />
+      </main>
+    </>
   );
 }

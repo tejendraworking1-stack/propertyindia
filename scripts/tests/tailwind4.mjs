@@ -48,6 +48,7 @@ const css = existsSync("app/globals.css") ? read("app/globals.css") : "";
 check("globals.css uses v4 imports (theme + utilities layers)", /@import\s+"tailwindcss\/theme\.css"/.test(css) && /@import\s+"tailwindcss\/utilities\.css"/.test(css), "");
 check("globals.css has no v3 @tailwind directives", !/@tailwind\s+(base|components|utilities)/.test(css), "");
 check("globals.css does not import Tailwind preflight (browser defaults preserved)", !/@import\s+["']tailwindcss["']/.test(css) && !/@import\s+["']tailwindcss\/preflight/.test(css), "");
+check("globals.css keeps Tailwind from scanning reference/docs/scripts/verification folders", ["reference", "docs", "scripts", "verification"].every((d) => new RegExp(`@source\\s+not\\s+"\\.\\./${d}"`).test(css)), "");
 check("globals.css maps tokens via @theme inline", /@theme\s+inline/.test(css), "");
 
 // --- compiled CSS

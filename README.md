@@ -67,3 +67,9 @@ docs/               Tailwind decision + verified 3.4 fallback
 - **Icons:** use `<Icon />` only. Do not swap in other icon sets without approval.
 - **Font:** local variable font via `@font-face` (weights 200–800). No Google Fonts request.
 - **AI chat:** `NEXT_PUBLIC_AI_ENDPOINT` (see `.env.example`). Empty = "AI service is not connected yet." as in the original.
+
+## Homepage Part 1 (this delivery)
+
+Header, Hero, Search (4 tabs), Why Choose, Featured Properties. See `docs/PART1-REPORT.md` for scope, deliberate
+differences and the honest split between harness tests (run) and real Next.js tests (to be run by you).
+Original stylesheet: `app/home.css` (verbatim). Original page for comparison tests: `reference/`.

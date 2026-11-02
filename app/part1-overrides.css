@@ -1,0 +1,14 @@
+/* ============================================================================
+   Part 1 – approved deliberate deviations from the original homepage.
+   Everything else is the original CSS (home.css).
+
+   1) Featured Properties (owner decision): at 1280px and wider all four cards must be fully visible.
+      Original: flex-basis clamp(250px, (100% - 48px) / 3.3, 340px) -> the 4th card was cut off.
+      Now: four equal cards that fill the row (3 gaps of 16px). Below 1280px the original slider is unchanged.
+   ============================================================================ */
+@media (min-width: 1280px) {
+  #grid .card {
+    flex: 0 0 calc((100% - 48px) / 4);
+    min-width: 0;
+  }
+}

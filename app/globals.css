@@ -3,6 +3,14 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 @import "./fonts.css";
 
+/* Tailwind 4 scans the whole project for class names. Keep it out of the original HTML reference, docs, test
+   artefacts and scripts, so it only generates utilities for real application code. */
+@source not "../reference";
+@source not "../docs";
+@source not "../scripts";
+@source not "../verification";
+@source not "../verification-offline";
+
 /* Tailwind 4 is wired to the ORIGINAL tokens below; nothing is re-valued here.
    Preflight is NOT imported, so browser defaults match the original HTML.
    Breakpoints: only sm 640 / lg 960 are named; use min-[1280px]: etc. for the rest. */
