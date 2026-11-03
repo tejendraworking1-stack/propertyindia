@@ -48,10 +48,12 @@ const N = {
   devUp: "8-dev-server (server up)",
   devSuite: "foundation-preview suite: dev-bundled-chromium",
   homeDev: "homepage-part1 suite (vs original HTML): dev-bundled-chromium",
+  home2Dev: "homepage-part2 suite (vs original HTML): dev-bundled-chromium",
   devStop: "8-dev-server (server cleanup)",
   prodUp: "9-production-server (server up)",
   prodSuite: "foundation-preview suite: prod-bundled-chromium",
   homeProd: "homepage-part1 suite (vs original HTML): prod-bundled-chromium",
+  home2Prod: "homepage-part2 suite (vs original HTML): prod-bundled-chromium",
   c111Suite: `foundation-preview suite: chrome${GATE_CHROME} (optional)`,
   androidSuite: "foundation-preview suite: android-chrome-emulation (informational)",
   prodStop: "9-production-server (server cleanup)",
@@ -171,12 +173,12 @@ function foundationSuite(name, tag, { chromePath, expectMajor, gate = true, extr
 
 // Homepage Part 1: compares the real Next.js page against reference/ (original HTML) at 10 widths and runs the same
 // interactions on both. Required once Part 1 exists.
-function homepageSuite(name, tag, { expectMajor, gate = true } = {}) {
+function homepageSuite(name, tag, { expectMajor, gate = true, part = 1 } = {}) {
   const env = { ...process.env, VERIFY_DIR: V, ...(expectMajor ? { EXPECT_MAJOR: expectMajor } : {}) };
-  const r = spawnSync("node", ["scripts/tests/homepage-part1.mjs", "--target", `${BASE}/`, "--tag", tag], { encoding: "utf8", env, maxBuffer: 1 << 28 });
+  const r = spawnSync("node", [`scripts/tests/homepage-part${part}.mjs`, "--target", `${BASE}/`, "--tag", tag], { encoding: "utf8", env, maxBuffer: 1 << 28 });
   const out = (r.stdout ?? "") + (r.stderr ?? "");
-  writeFileSync(`${V}/logs/homepage-part1-${tag}.log`, out);
-  const res = `${V}/homepage-part1/${tag}/results.json`;
+  writeFileSync(`${V}/logs/homepage-part${part}-${tag}.log`, out);
+  const res = `${V}/homepage-part${part}/${tag}/results.json`;
   let ok = r.status === 0;
   let detail = "";
   if (existsSync(res)) {
@@ -185,14 +187,14 @@ function homepageSuite(name, tag, { expectMajor, gate = true } = {}) {
     const widths = new Set(j.results.map((x) => (x.name.match(/^(\d+)px/) ?? [])[1]).filter(Boolean)).size;
     if (widths !== 10) { ok = false; bad.push({ name: "all 10 widths tested", detail: `only ${widths} widths produced results` }); }
     detail = `${j.results.length - bad.length}/${j.results.length} checks passed on ${j.browser}; ${widths}/10 widths; executable: ${j.browserExecutable} [${j.browserSource}]`;
-    for (const b of bad) errors.push({ source: `homepage-part1/${tag}`, text: `FAILED CHECK: ${b.name} – ${b.detail}` });
+    for (const b of bad) errors.push({ source: `homepage-part${part}/${tag}`, text: `FAILED CHECK: ${b.name} – ${b.detail}` });
     if (bad.length) ok = false;
   } else {
     ok = false;
     detail = "test did not produce results";
-    errors.push({ source: `homepage-part1/${tag}`, text: out.trim().split("\n").slice(-30).join("\n") });
+    errors.push({ source: `homepage-part${part}/${tag}`, text: out.trim().split("\n").slice(-30).join("\n") });
   }
-  record({ name, gate, status: ok ? "PASS" : "FAIL", detail, log: `${V}/logs/homepage-part1-${tag}.log` });
+  record({ name, gate, status: ok ? "PASS" : "FAIL", detail, log: `${V}/logs/homepage-part${part}-${tag}.log` });
 }
 
 // Downloads a specific Chrome build (Chrome for Testing). Returns the executable path or null.
@@ -262,11 +264,13 @@ else if (!blocker) {
 
 await withServer("8-dev-server", N.devUp, N.devStop, ["run", "dev"], async () => { foundationSuite(N.devSuite, "dev-bundled-chromium", { expectMajor: CHROMIUM_MAJOR });
   homepageSuite(N.homeDev, "dev-bundled-chromium", { expectMajor: CHROMIUM_MAJOR });
+  homepageSuite(N.home2Dev, "dev-bundled-chromium", { expectMajor: CHROMIUM_MAJOR, part: 2 });
 });
 run("3b-rebuild-before-production-server", "npm", ["run", "build"]);
 await withServer("9-production-server", N.prodUp, N.prodStop, ["run", "start"], async () => {
   foundationSuite(N.prodSuite, "prod-bundled-chromium", { expectMajor: CHROMIUM_MAJOR });
   homepageSuite(N.homeProd, "prod-bundled-chromium", { expectMajor: CHROMIUM_MAJOR });
+  homepageSuite(N.home2Prod, "prod-bundled-chromium", { expectMajor: CHROMIUM_MAJOR, part: 2 });
   foundationSuite(N.androidSuite, "android-chrome-emulation", { expectMajor: CHROMIUM_MAJOR, gate: false, extraEnv: { EMULATE: "android" } });
   if (chrome111) foundationSuite(N.c111Suite, `chrome${GATE_CHROME}`, { chromePath: chrome111, expectMajor: GATE_CHROME, gate: false });
   else record({ name: N.c111Suite, gate: false, status: "NOT RUN", detail: `Chrome ${GATE_CHROME} not available; optional` });
@@ -277,7 +281,7 @@ await withServer("9-production-server", N.prodUp, N.prodStop, ["run", "start"], 
   }
 });
 
-record({ name: "10-Homepage Part 2 visual + interaction suite", gate: false, status: "NOT RUN", detail: "Part 2 sections (Popular Locations, Recently Added, How it works, CTA, Footer, bottom nav, Ask Property AI) follow after written approval of Part 1" });
+record({ name: "10-Homepage Part 3 (none planned)", gate: false, status: "NOT RUN", detail: "the homepage is delivered in two parts; nothing further is scheduled" });
 
 // ---------------------------------------------------------------- report
 const byName = (n) => steps.find((s) => s.name === n);
@@ -293,9 +297,9 @@ for (const s of steps.filter((x) => !x.name.startsWith("foundation-preview") && 
 md += `\n## B1. Foundation-preview suite on Chromium (dev + prod servers) – Phase 1 only, tests /dev/foundation, NOT the homepage\n\nWidths: 320, 360, 380, 414, 430, 639, 768, 1024, 1280, 1440. Per width: no horizontal overflow; Plus Jakarta Sans served from the local font file (byte-identical sha256, same origin); no external requests; 35 icons; original tokens; no console/network errors. The browser executable and how it was chosen are listed per run (CHROME_PATH, Playwright-bundled, or discovered).\n\n| Browser run | Result | Detail |\n|---|---|---|\n`;
 for (const s of steps.filter((x) => x.name.startsWith("foundation-preview") && !x.name.includes(`chrome${GATE_CHROME}`))) md += `| ${s.name.replace("foundation-preview suite: ", "")} | ${s.status} | ${s.detail ?? ""} |\n`;
 md += `\nScreenshots: ${V}/foundation/<browser>/<width>.png\n`;
-md += `\n## B3. Homepage Part 1 vs ORIGINAL HTML (real Next.js; 10 widths: pixels, layout, interactions)\n\n| Browser run | Result | Detail |\n|---|---|---|\n`;
-for (const x of steps.filter((y) => y.name.startsWith("homepage-part1"))) md += `| ${x.name.replace("homepage-part1 suite (vs original HTML): ", "")} | ${x.status} | ${x.detail ?? ""} |\n`;
-md += `\nScreenshots and per-section pixel diffs: ${V}/homepage-part1/<browser>/ (visual/<width>-page.png vs <width>-original.png, results.json).\n`;
+md += `\n## B3. Homepage (Part 1 + Part 2) vs ORIGINAL HTML (real Next.js; 10 widths: pixels, layout, interactions)\n\n| Browser run | Result | Detail |\n|---|---|---|\n`;
+for (const x of steps.filter((y) => y.name.startsWith("homepage-part"))) md += `| ${x.name.replace(" suite (vs original HTML)", "")} | ${x.status} | ${x.detail ?? ""} |\n`;
+md += `\nScreenshots and per-section pixel diffs: ${V}/homepage-part1/<browser>/ and ${V}/homepage-part2/<browser>/ (visual/, results.json).\n`;
 const c111step = byName(N.c111Suite);
 const c111status = !c111step ? "NOT RUN" : c111step.status === "PASS" ? "PASS" : c111step.status === "FAIL" ? "FAIL" : "NOT RUN";
 md += `\n## B2. Chrome ${GATE_CHROME} backward compatibility – OPTIONAL (separate report: CHROME${GATE_CHROME}-REPORT.md)\n\nStatus: **${c111status}** (optional; does not affect the Phase 1 verdict).\n`;

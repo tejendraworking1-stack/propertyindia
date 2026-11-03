@@ -1,0 +1,1531 @@
+{
+  "suite": "homepage-part1",
+  "tag": "regression",
+  "target": "http://localhost:3400/",
+  "referenceFile": "reference/propertyindia-home-v13-contrast.html",
+  "browser": "141.0.7390.37",
+  "browserExecutable": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+  "browserSource": "playwright-bundled",
+  "widths": [
+    320,
+    360,
+    380,
+    414,
+    430,
+    639,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "pixelLimitPct": 0.35,
+  "results": [
+    {
+      "name": "browser major version is 141",
+      "ok": true,
+      "detail": "141.0.7390.37"
+    },
+    {
+      "name": "320px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "320px tagline font size equals original",
+      "ok": true,
+      "detail": "9.5px vs 9.5px"
+    },
+    {
+      "name": "320px layout header: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[0,56,320] vs [0,56,320]"
+    },
+    {
+      "name": "320px pixels header: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 320,56 vs 320,56"
+    },
+    {
+      "name": "320px layout hero: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[56,166.4,320] vs [56,166.4,320]"
+    },
+    {
+      "name": "320px pixels hero: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 320,167 vs 320,167"
+    },
+    {
+      "name": "320px layout search: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[156,232,320] vs [156,232,320]"
+    },
+    {
+      "name": "320px pixels search: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 320,233 vs 320,233"
+    },
+    {
+      "name": "320px layout why-choose: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[416,112.8,320] vs [416,112.8,320]"
+    },
+    {
+      "name": "320px pixels why-choose: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 320,114 vs 320,114"
+    },
+    {
+      "name": "320px layout featured: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[541,371.7,320] vs [541,371.7,320]"
+    },
+    {
+      "name": "320px pixels featured: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 320,372 vs 320,372"
+    },
+    {
+      "name": "320px Featured: slider behaviour equals original (below 1280px)",
+      "ok": true,
+      "detail": "{\"feat\":{\"count\":4,\"allInside\":false,\"noScroll\":false,\"dotsHidden\":false,\"widths\":[200,200,200,200]},\"featRef\":{\"scroll\":true,\"count\":4}}"
+    },
+    {
+      "name": "320px four category tabs in original order",
+      "ok": true,
+      "detail": "[\"Rent\",\"PG / Hostel\",\"Commercial\",\"Land / Plot\"]"
+    },
+    {
+      "name": "360px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "360px tagline font size equals original",
+      "ok": true,
+      "detail": "9.5px vs 9.5px"
+    },
+    {
+      "name": "360px layout header: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[0,56,360] vs [0,56,360]"
+    },
+    {
+      "name": "360px pixels header: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 360,56 vs 360,56"
+    },
+    {
+      "name": "360px layout hero: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[56,158.4,360] vs [56,158.4,360]"
+    },
+    {
+      "name": "360px pixels hero: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 360,159 vs 360,159"
+    },
+    {
+      "name": "360px layout search: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[148,232,360] vs [148,232,360]"
+    },
+    {
+      "name": "360px pixels search: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 360,233 vs 360,233"
+    },
+    {
+      "name": "360px layout why-choose: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[408,112.8,360] vs [408,112.8,360]"
+    },
+    {
+      "name": "360px pixels why-choose: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 360,114 vs 360,114"
+    },
+    {
+      "name": "360px layout featured: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[533,371.7,360] vs [533,371.7,360]"
+    },
+    {
+      "name": "360px pixels featured: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 360,372 vs 360,372"
+    },
+    {
+      "name": "360px Featured: slider behaviour equals original (below 1280px)",
+      "ok": true,
+      "detail": "{\"feat\":{\"count\":4,\"allInside\":false,\"noScroll\":false,\"dotsHidden\":false,\"widths\":[202,202,202,202]},\"featRef\":{\"scroll\":true,\"count\":4}}"
+    },
+    {
+      "name": "360px four category tabs in original order",
+      "ok": true,
+      "detail": "[\"Rent\",\"PG / Hostel\",\"Commercial\",\"Land / Plot\"]"
+    },
+    {
+      "name": "380px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "380px tagline font size equals original",
+      "ok": true,
+      "detail": "9.5px vs 9.5px"
+    },
+    {
+      "name": "380px layout header: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[0,56,380] vs [0,56,380]"
+    },
+    {
+      "name": "380px pixels header: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 380,56 vs 380,56"
+    },
+    {
+      "name": "380px layout hero: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[56,167.2,380] vs [56,167.2,380]"
+    },
+    {
+      "name": "380px pixels hero: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 380,168 vs 380,168"
+    },
+    {
+      "name": "380px layout search: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[157,232,380] vs [157,232,380]"
+    },
+    {
+      "name": "380px pixels search: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 380,233 vs 380,233"
+    },
+    {
+      "name": "380px layout why-choose: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[417,112.8,380] vs [417,112.8,380]"
+    },
+    {
+      "name": "380px pixels why-choose: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 380,113 vs 380,113"
+    },
+    {
+      "name": "380px layout featured: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[542,371.7,380] vs [542,371.7,380]"
+    },
+    {
+      "name": "380px pixels featured: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 380,373 vs 380,373"
+    },
+    {
+      "name": "380px Featured: slider behaviour equals original (below 1280px)",
+      "ok": true,
+      "detail": "{\"feat\":{\"count\":4,\"allInside\":false,\"noScroll\":false,\"dotsHidden\":false,\"widths\":[214,214,214,214]},\"featRef\":{\"scroll\":true,\"count\":4}}"
+    },
+    {
+      "name": "380px four category tabs in original order",
+      "ok": true,
+      "detail": "[\"Rent\",\"PG / Hostel\",\"Commercial\",\"Land / Plot\"]"
+    },
+    {
+      "name": "414px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "414px tagline font size equals original",
+      "ok": true,
+      "detail": "9.5px vs 9.5px"
+    },
+    {
+      "name": "414px layout header: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[0,56,414] vs [0,56,414]"
+    },
+    {
+      "name": "414px pixels header: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 414,56 vs 414,56"
+    },
+    {
+      "name": "414px layout hero: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[56,182.2,414] vs [56,182.2,414]"
+    },
+    {
+      "name": "414px pixels hero: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 414,183 vs 414,183"
+    },
+    {
+      "name": "414px layout search: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[172,232,414] vs [172,232,414]"
+    },
+    {
+      "name": "414px pixels search: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 414,233 vs 414,233"
+    },
+    {
+      "name": "414px layout why-choose: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[432,112.8,414] vs [432,112.8,414]"
+    },
+    {
+      "name": "414px pixels why-choose: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 414,113 vs 414,113"
+    },
+    {
+      "name": "414px layout featured: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[557,328.3,414] vs [557,328.3,414]"
+    },
+    {
+      "name": "414px pixels featured: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 414,330 vs 414,330"
+    },
+    {
+      "name": "414px Featured: slider behaviour equals original (below 1280px)",
+      "ok": true,
+      "detail": "{\"feat\":{\"count\":4,\"allInside\":false,\"noScroll\":false,\"dotsHidden\":false,\"widths\":[234,234,234,234]},\"featRef\":{\"scroll\":true,\"count\":4}}"
+    },
+    {
+      "name": "414px four category tabs in original order",
+      "ok": true,
+      "detail": "[\"Rent\",\"PG / Hostel\",\"Commercial\",\"Land / Plot\"]"
+    },
+    {
+      "name": "430px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "430px tagline font size equals original",
+      "ok": true,
+      "detail": "9.5px vs 9.5px"
+    },
+    {
+      "name": "430px layout header: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[0,56,430] vs [0,56,430]"
+    },
+    {
+      "name": "430px pixels header: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 430,56 vs 430,56"
+    },
+    {
+      "name": "430px layout hero: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[56,189.2,430] vs [56,189.2,430]"
+    },
+    {
+      "name": "430px pixels hero: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 430,190 vs 430,190"
+    },
+    {
+      "name": "430px layout search: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[179,232,430] vs [179,232,430]"
+    },
+    {
+      "name": "430px pixels search: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 430,233 vs 430,233"
+    },
+    {
+      "name": "430px layout why-choose: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[439,112.8,430] vs [439,112.8,430]"
+    },
+    {
+      "name": "430px pixels why-choose: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 430,113 vs 430,113"
+    },
+    {
+      "name": "430px layout featured: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[564,328.3,430] vs [564,328.3,430]"
+    },
+    {
+      "name": "430px pixels featured: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 430,330 vs 430,330"
+    },
+    {
+      "name": "430px Featured: slider behaviour equals original (below 1280px)",
+      "ok": true,
+      "detail": "{\"feat\":{\"count\":4,\"allInside\":false,\"noScroll\":false,\"dotsHidden\":false,\"widths\":[244,244,244,244]},\"featRef\":{\"scroll\":true,\"count\":4}}"
+    },
+    {
+      "name": "430px four category tabs in original order",
+      "ok": true,
+      "detail": "[\"Rent\",\"PG / Hostel\",\"Commercial\",\"Land / Plot\"]"
+    },
+    {
+      "name": "639px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "639px tagline font size equals original",
+      "ok": true,
+      "detail": "9.5px vs 9.5px"
+    },
+    {
+      "name": "639px layout header: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[0,56,639] vs [0,56,639]"
+    },
+    {
+      "name": "639px pixels header: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 639,56 vs 639,56"
+    },
+    {
+      "name": "639px layout hero: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[56,281.2,639] vs [56,281.2,639]"
+    },
+    {
+      "name": "639px pixels hero: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 639,282 vs 639,282"
+    },
+    {
+      "name": "639px layout search: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[271,232,639] vs [271,232,639]"
+    },
+    {
+      "name": "639px pixels search: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 639,233 vs 639,233"
+    },
+    {
+      "name": "639px layout why-choose: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[531,112.8,639] vs [531,112.8,639]"
+    },
+    {
+      "name": "639px pixels why-choose: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 639,113 vs 639,113"
+    },
+    {
+      "name": "639px layout featured: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[656,328.3,639] vs [656,328.3,639]"
+    },
+    {
+      "name": "639px pixels featured: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 639,330 vs 639,330"
+    },
+    {
+      "name": "639px Featured: slider behaviour equals original (below 1280px)",
+      "ok": true,
+      "detail": "{\"feat\":{\"count\":4,\"allInside\":false,\"noScroll\":false,\"dotsHidden\":false,\"widths\":[250,250,250,250]},\"featRef\":{\"scroll\":true,\"count\":4}}"
+    },
+    {
+      "name": "639px four category tabs in original order",
+      "ok": true,
+      "detail": "[\"Rent\",\"PG / Hostel\",\"Commercial\",\"Land / Plot\"]"
+    },
+    {
+      "name": "768px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "768px tagline font size equals original",
+      "ok": true,
+      "detail": "9.5px vs 9.5px"
+    },
+    {
+      "name": "768px layout header: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[0,65,768] vs [0,65,768]"
+    },
+    {
+      "name": "768px pixels header: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 768,65 vs 768,65"
+    },
+    {
+      "name": "768px layout hero: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[65,238.1,768] vs [65,238.1,768]"
+    },
+    {
+      "name": "768px pixels hero: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 768,239 vs 768,239"
+    },
+    {
+      "name": "768px layout search: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[231,238,768] vs [231,238,768]"
+    },
+    {
+      "name": "768px pixels search: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 768,239 vs 768,239"
+    },
+    {
+      "name": "768px layout why-choose: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[505,174.4,720] vs [505,174.4,720]"
+    },
+    {
+      "name": "768px pixels why-choose: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 720,175 vs 720,175"
+    },
+    {
+      "name": "768px layout featured: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[693,390.2,720] vs [693,390.2,720]"
+    },
+    {
+      "name": "768px pixels featured: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 720,391 vs 720,391"
+    },
+    {
+      "name": "768px Featured: slider behaviour equals original (below 1280px)",
+      "ok": true,
+      "detail": "{\"feat\":{\"count\":4,\"allInside\":false,\"noScroll\":false,\"dotsHidden\":false,\"widths\":[250,250,250,250]},\"featRef\":{\"scroll\":true,\"count\":4}}"
+    },
+    {
+      "name": "768px four category tabs in original order",
+      "ok": true,
+      "detail": "[\"Rent\",\"PG / Hostel\",\"Commercial\",\"Land / Plot\"]"
+    },
+    {
+      "name": "1024px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "1024px tagline font size equals original",
+      "ok": true,
+      "detail": "11px vs 11px"
+    },
+    {
+      "name": "1024px layout header: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[0,77,1024] vs [0,77,1024]"
+    },
+    {
+      "name": "1024px pixels header: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1024,77 vs 1024,77"
+    },
+    {
+      "name": "1024px layout hero: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[77,270,1024] vs [77,270,1024]"
+    },
+    {
+      "name": "1024px pixels hero: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1024,270 vs 1024,270"
+    },
+    {
+      "name": "1024px layout search: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[273,138,1024] vs [273,138,1024]"
+    },
+    {
+      "name": "1024px pixels search: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1024,138 vs 1024,138"
+    },
+    {
+      "name": "1024px layout why-choose: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[455,90,988] vs [455,90,988]"
+    },
+    {
+      "name": "1024px pixels why-choose: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 988,90 vs 988,90"
+    },
+    {
+      "name": "1024px layout featured: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[561,404.4,988] vs [561,404.4,988]"
+    },
+    {
+      "name": "1024px pixels featured: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 988,405 vs 988,405"
+    },
+    {
+      "name": "1024px Featured: slider behaviour equals original (below 1280px)",
+      "ok": true,
+      "detail": "{\"feat\":{\"count\":4,\"allInside\":false,\"noScroll\":false,\"dotsHidden\":false,\"widths\":[270,270,270,270]},\"featRef\":{\"scroll\":true,\"count\":4}}"
+    },
+    {
+      "name": "1024px four category tabs in original order",
+      "ok": true,
+      "detail": "[\"Rent\",\"PG / Hostel\",\"Commercial\",\"Land / Plot\"]"
+    },
+    {
+      "name": "1280px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "1280px tagline font size equals original",
+      "ok": true,
+      "detail": "11px vs 11px"
+    },
+    {
+      "name": "1280px layout header: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[0,77,1280] vs [0,77,1280]"
+    },
+    {
+      "name": "1280px pixels header: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1280,77 vs 1280,77"
+    },
+    {
+      "name": "1280px layout hero: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[77,294.4,1280] vs [77,294.4,1280]"
+    },
+    {
+      "name": "1280px pixels hero: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1280,295 vs 1280,295"
+    },
+    {
+      "name": "1280px layout search: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[297,138,1280] vs [297,138,1280]"
+    },
+    {
+      "name": "1280px pixels search: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1280,139 vs 1280,139"
+    },
+    {
+      "name": "1280px layout why-choose: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[479,90,1164] vs [479,90,1164]"
+    },
+    {
+      "name": "1280px pixels why-choose: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1164,91 vs 1164,91"
+    },
+    {
+      "name": "1280px Featured: all 4 cards fully visible, no cropping, dots hidden",
+      "ok": true,
+      "detail": "{\"count\":4,\"allInside\":true,\"noScroll\":true,\"dotsHidden\":true,\"widths\":[267,267,267,267]}"
+    },
+    {
+      "name": "1280px four category tabs in original order",
+      "ok": true,
+      "detail": "[\"Rent\",\"PG / Hostel\",\"Commercial\",\"Land / Plot\"]"
+    },
+    {
+      "name": "1440px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "1440px tagline font size equals original",
+      "ok": true,
+      "detail": "11px vs 11px"
+    },
+    {
+      "name": "1440px layout header: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[0,77,1440] vs [0,77,1440]"
+    },
+    {
+      "name": "1440px pixels header: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1440,77 vs 1440,77"
+    },
+    {
+      "name": "1440px layout hero: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[77,320,1440] vs [77,320,1440]"
+    },
+    {
+      "name": "1440px pixels hero: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1440,320 vs 1440,320"
+    },
+    {
+      "name": "1440px layout search: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[323,138,1440] vs [323,138,1440]"
+    },
+    {
+      "name": "1440px pixels search: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1440,138 vs 1440,138"
+    },
+    {
+      "name": "1440px layout why-choose: position and size equal original (±1px)",
+      "ok": true,
+      "detail": "[505,90,1164] vs [505,90,1164]"
+    },
+    {
+      "name": "1440px pixels why-choose: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1164,90 vs 1164,90"
+    },
+    {
+      "name": "1440px Featured: all 4 cards fully visible, no cropping, dots hidden",
+      "ok": true,
+      "detail": "{\"count\":4,\"allInside\":true,\"noScroll\":true,\"dotsHidden\":true,\"widths\":[267,267,267,267]}"
+    },
+    {
+      "name": "1440px four category tabs in original order",
+      "ok": true,
+      "detail": "[\"Rent\",\"PG / Hostel\",\"Commercial\",\"Land / Plot\"]"
+    },
+    {
+      "name": "380px interaction \"menu\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"language\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"tabs\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"rentLock\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"favourites\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"sliders\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"pairStack\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"menu\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"language\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"tabs\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"rentLock\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"favourites\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"sliders\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "interaction \"search validation + 5s clear\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "interaction \"GPS denied\" matches original",
+      "ok": true,
+      "detail": "{\"text\":\"Location permission denied. Allow it in your browser settings, or type your city or area.\",\"err\":true,\"value\":\"\",\"link\":null,\"busy\":\"false\",\"ph\":\"City, Area or Landmark\"}"
+    },
+    {
+      "name": "interaction \"GPS success\" matches original",
+      "ok": true,
+      "detail": "{\"text\":\"Using your location. Edit if needed. © OpenStreetMap contributors\",\"err\":false,\"value\":\"Whitefield, Bengaluru\",\"link\":\"https://www.openstreetmap.org/copyright\",\"busy\":\"false\",\"ph\":\"City, Area or Landmark\"}"
+    },
+    {
+      "name": "no external requests from the page under test (fonts, CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no console errors / hydration errors on the page under test",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "visual": [
+    {
+      "width": 320,
+      "section": "header",
+      "sizeA": [
+        320,
+        56
+      ],
+      "sizeB": [
+        320,
+        56
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 320,
+      "section": "hero",
+      "sizeA": [
+        320,
+        167
+      ],
+      "sizeB": [
+        320,
+        167
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 320,
+      "section": "search",
+      "sizeA": [
+        320,
+        233
+      ],
+      "sizeB": [
+        320,
+        233
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 320,
+      "section": "why-choose",
+      "sizeA": [
+        320,
+        114
+      ],
+      "sizeB": [
+        320,
+        114
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 320,
+      "section": "featured",
+      "sizeA": [
+        320,
+        372
+      ],
+      "sizeB": [
+        320,
+        372
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "header",
+      "sizeA": [
+        360,
+        56
+      ],
+      "sizeB": [
+        360,
+        56
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "hero",
+      "sizeA": [
+        360,
+        159
+      ],
+      "sizeB": [
+        360,
+        159
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "search",
+      "sizeA": [
+        360,
+        233
+      ],
+      "sizeB": [
+        360,
+        233
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "why-choose",
+      "sizeA": [
+        360,
+        114
+      ],
+      "sizeB": [
+        360,
+        114
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "featured",
+      "sizeA": [
+        360,
+        372
+      ],
+      "sizeB": [
+        360,
+        372
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "header",
+      "sizeA": [
+        380,
+        56
+      ],
+      "sizeB": [
+        380,
+        56
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "hero",
+      "sizeA": [
+        380,
+        168
+      ],
+      "sizeB": [
+        380,
+        168
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "search",
+      "sizeA": [
+        380,
+        233
+      ],
+      "sizeB": [
+        380,
+        233
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "why-choose",
+      "sizeA": [
+        380,
+        113
+      ],
+      "sizeB": [
+        380,
+        113
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "featured",
+      "sizeA": [
+        380,
+        373
+      ],
+      "sizeB": [
+        380,
+        373
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "header",
+      "sizeA": [
+        414,
+        56
+      ],
+      "sizeB": [
+        414,
+        56
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "hero",
+      "sizeA": [
+        414,
+        183
+      ],
+      "sizeB": [
+        414,
+        183
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "search",
+      "sizeA": [
+        414,
+        233
+      ],
+      "sizeB": [
+        414,
+        233
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "why-choose",
+      "sizeA": [
+        414,
+        113
+      ],
+      "sizeB": [
+        414,
+        113
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "featured",
+      "sizeA": [
+        414,
+        330
+      ],
+      "sizeB": [
+        414,
+        330
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "header",
+      "sizeA": [
+        430,
+        56
+      ],
+      "sizeB": [
+        430,
+        56
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "hero",
+      "sizeA": [
+        430,
+        190
+      ],
+      "sizeB": [
+        430,
+        190
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "search",
+      "sizeA": [
+        430,
+        233
+      ],
+      "sizeB": [
+        430,
+        233
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "why-choose",
+      "sizeA": [
+        430,
+        113
+      ],
+      "sizeB": [
+        430,
+        113
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "featured",
+      "sizeA": [
+        430,
+        330
+      ],
+      "sizeB": [
+        430,
+        330
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "header",
+      "sizeA": [
+        639,
+        56
+      ],
+      "sizeB": [
+        639,
+        56
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "hero",
+      "sizeA": [
+        639,
+        282
+      ],
+      "sizeB": [
+        639,
+        282
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "search",
+      "sizeA": [
+        639,
+        233
+      ],
+      "sizeB": [
+        639,
+        233
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "why-choose",
+      "sizeA": [
+        639,
+        113
+      ],
+      "sizeB": [
+        639,
+        113
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "featured",
+      "sizeA": [
+        639,
+        330
+      ],
+      "sizeB": [
+        639,
+        330
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "header",
+      "sizeA": [
+        768,
+        65
+      ],
+      "sizeB": [
+        768,
+        65
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "hero",
+      "sizeA": [
+        768,
+        239
+      ],
+      "sizeB": [
+        768,
+        239
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "search",
+      "sizeA": [
+        768,
+        239
+      ],
+      "sizeB": [
+        768,
+        239
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "why-choose",
+      "sizeA": [
+        720,
+        175
+      ],
+      "sizeB": [
+        720,
+        175
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "featured",
+      "sizeA": [
+        720,
+        391
+      ],
+      "sizeB": [
+        720,
+        391
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1024,
+      "section": "header",
+      "sizeA": [
+        1024,
+        77
+      ],
+      "sizeB": [
+        1024,
+        77
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1024,
+      "section": "hero",
+      "sizeA": [
+        1024,
+        270
+      ],
+      "sizeB": [
+        1024,
+        270
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1024,
+      "section": "search",
+      "sizeA": [
+        1024,
+        138
+      ],
+      "sizeB": [
+        1024,
+        138
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1024,
+      "section": "why-choose",
+      "sizeA": [
+        988,
+        90
+      ],
+      "sizeB": [
+        988,
+        90
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1024,
+      "section": "featured",
+      "sizeA": [
+        988,
+        405
+      ],
+      "sizeB": [
+        988,
+        405
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1280,
+      "section": "header",
+      "sizeA": [
+        1280,
+        77
+      ],
+      "sizeB": [
+        1280,
+        77
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1280,
+      "section": "hero",
+      "sizeA": [
+        1280,
+        295
+      ],
+      "sizeB": [
+        1280,
+        295
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1280,
+      "section": "search",
+      "sizeA": [
+        1280,
+        139
+      ],
+      "sizeB": [
+        1280,
+        139
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1280,
+      "section": "why-choose",
+      "sizeA": [
+        1164,
+        91
+      ],
+      "sizeB": [
+        1164,
+        91
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1280,
+      "section": "featured",
+      "note": "approved deviation (four cards visible), not pixel-compared"
+    },
+    {
+      "width": 1440,
+      "section": "header",
+      "sizeA": [
+        1440,
+        77
+      ],
+      "sizeB": [
+        1440,
+        77
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1440,
+      "section": "hero",
+      "sizeA": [
+        1440,
+        320
+      ],
+      "sizeB": [
+        1440,
+        320
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1440,
+      "section": "search",
+      "sizeA": [
+        1440,
+        138
+      ],
+      "sizeB": [
+        1440,
+        138
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1440,
+      "section": "why-choose",
+      "sizeA": [
+        1164,
+        90
+      ],
+      "sizeB": [
+        1164,
+        90
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1440,
+      "section": "featured",
+      "note": "approved deviation (four cards visible), not pixel-compared"
+    }
+  ]
+}

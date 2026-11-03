@@ -1,0 +1,156 @@
+{
+  "suite": "homepage-part2",
+  "tag": "int",
+  "target": "http://localhost:3400/",
+  "aiTarget": "http://localhost:3400/with-ai",
+  "referenceFile": "reference/propertyindia-home-v13-contrast.html",
+  "browser": "141.0.7390.37",
+  "browserExecutable": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+  "browserSource": "playwright-bundled",
+  "widths": [
+    320,
+    360,
+    380,
+    414,
+    430,
+    639,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "pixelLimitPct": 0.35,
+  "results": [
+    {
+      "name": "browser major version is 141",
+      "ok": true,
+      "detail": "141.0.7390.37"
+    },
+    {
+      "name": "380px interaction \"footerAccordion\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"footerLanguage\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"recentFavourites\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"locationsSlider\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"bottomBar\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"storeButtons\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"aiPanel\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"aiOffline\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "380px interaction \"aiDrag\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"footerAccordion\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"footerLanguage\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"recentFavourites\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"locationsSlider\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"storeButtons\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"aiPanel\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"aiOffline\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"aiDrag\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "1024px interaction \"anchors\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "interaction \"store note clears after 3.5s\" matches original",
+      "ok": true,
+      "detail": "identical"
+    },
+    {
+      "name": "AI contract: reply shown; history (previous pair) is sent with the second message",
+      "ok": true,
+      "detail": "[\"bot|Hi! I’m your Property AI assistant. Ask me about renting, PGs, land/plot leases, locations and agreements.\",\"me|first\",\"bot|Echo: first | history=0 | source=propertyindia-web\",\"me|second\",\"bot|Echo: second | history=2 | source=propertyindia-web\"]"
+    },
+    {
+      "name": "AI contract: HTTP 500 shows the not-connected message",
+      "ok": true,
+      "detail": "[\"bot|Hi! I’m your Property AI assistant. Ask me about renting, PGs, land/plot leases, locations and agreements.\",\"me|err please\",\"err|AI service is not connected yet. Please try again later.\"]"
+    },
+    {
+      "name": "AI contract: response without a reply shows the not-connected message",
+      "ok": true,
+      "detail": "[\"bot|Hi! I’m your Property AI assistant. Ask me about renting, PGs, land/plot leases, locations and agreements.\",\"me|bad please\",\"err|AI service is not connected yet. Please try again later.\"]"
+    },
+    {
+      "name": "AI contract: 20s timeout shows the timeout message, input disabled while waiting and enabled after",
+      "ok": true,
+      "detail": "{\"busy\":[true,true],\"msgs\":[\"bot|Hi! I’m your Property AI assistant. Ask me about renting, PGs, land/plot leases, locations and agreements.\",\"me|slow please\",\"err|The AI service took too long to respond. Please try again.\"],\"after\":false}"
+    },
+    {
+      "name": "no external requests from the page under test (fonts, CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no console errors / hydration errors on the page under test",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "visual": []
+}

@@ -138,3 +138,61 @@ export const TRUST_ITEMS: { icon: IconName; background: string; title: string; s
   { icon: "chat", background: "var(--blue)", title: "Secure Chat", subtitle: "Safe & private calls" },
   { icon: "doc", background: "var(--purple)", title: "Digital Agreements", subtitle: "Paperless & hassle-free" },
 ];
+
+/* =====================================================================================================
+   PART 2 content (copied from propertyindia-home-v13-contrast.html: LOCS, LOC_COUNT, RECENT, steps, footer)
+   ===================================================================================================== */
+
+/* ---------- Popular Locations ---------- */
+export const POPULAR_LOCATIONS: { name: string; image: { src: string; width: number; height: number }; count: string }[] = [
+  { name: "Bengaluru", image: { src: "/images/city-bengaluru.jpg", width: 480, height: 384 }, count: "12,450+" },
+  { name: "Mumbai", image: { src: "/images/city-mumbai.jpg", width: 480, height: 384 }, count: "18,320+" },
+  { name: "Delhi", image: { src: "/images/city-delhi.jpg", width: 480, height: 384 }, count: "16,780+" },
+  { name: "Hyderabad", image: { src: "/images/city-hyderabad.jpg", width: 480, height: 384 }, count: "9,620+" },
+  { name: "Pune", image: { src: "/images/city-pune.jpg", width: 480, height: 384 }, count: "8,940+" },
+  { name: "Ayodhya", image: { src: "/images/city-ayodhya.jpg", width: 480, height: 271 }, count: "2,340+" },
+  { name: "Vrindavan", image: { src: "/images/city-vrindavan.jpg", width: 480, height: 281 }, count: "3,120+" },
+  { name: "Mathura", image: { src: "/images/city-mathura.jpg", width: 480, height: 271 }, count: "2,890+" },
+];
+
+/* ---------- Recently Added (sample listings; images reuse the Featured photos by index) ---------- */
+export interface RecentListing {
+  imageIndex: number; // index into FEATURED_PROPERTIES
+  tag: string;
+  title: string;
+  price: string;
+  location: string;
+  details: string;
+  posted: string;
+}
+
+export const RECENT_LISTINGS: RecentListing[] = [
+  { imageIndex: 0, tag: "For Rent", title: "3 BHK Flat for Rent", price: "₹42,000/month", location: "HSR Layout, Bengaluru", details: "3 BHK · 3 Bath · 1,450 sq ft", posted: "2 hrs ago" },
+  { imageIndex: 1, tag: "PG", title: "Boys PG (Sharing)", price: "₹7,000/month", location: "Sector 18, Noida", details: "Shared Room · Wi-Fi · Food", posted: "5 hrs ago" },
+  { imageIndex: 2, tag: "Commercial", title: "Office Space for Rent", price: "₹85,000/month", location: "Andheri East, Mumbai", details: "1,200 sq ft · 2nd Floor", posted: "Yesterday" },
+  { imageIndex: 3, tag: "Land Lease", title: "Farm Land on Lease", price: "₹20,000/month", location: "Mathura, Uttar Pradesh", details: "2 Acre · Agricultural Use", posted: "Yesterday" },
+  { imageIndex: 0, tag: "For Rent", title: "Studio Apartment", price: "₹18,500/month", location: "Koregaon Park, Pune", details: "Studio · 1 Bath · 480 sq ft", posted: "2 days ago" },
+  { imageIndex: 1, tag: "PG", title: "Girls PG (Single)", price: "₹9,500/month", location: "Madhapur, Hyderabad", details: "Single Room · Wi-Fi · AC", posted: "3 days ago" },
+];
+
+/* ---------- How PropertyIndia works ---------- */
+export const HOW_STEPS: { icon: IconName; title: string; long: string; short: string }[] = [
+  { icon: "search", title: "Search", long: "Pick your city, property type and budget to see verified listings.", short: "Find verified rental listings." },
+  { icon: "chat", title: "Talk to the owner", long: "Chat or call directly. No agent in between, no brokerage.", short: "Chat directly. Zero brokerage." },
+  { icon: "doc", title: "Sign digitally", long: "Finish the rental or lease agreement online, without paperwork.", short: "Complete your agreement online." },
+];
+
+/* ---------- Footer ---------- */
+export const FOOTER_COLUMNS: { id: string; title: string; links: string[] }[] = [
+  { id: "explore", title: "Explore", links: ["Rent", "PG / Hostel / Co-Living", "Commercial / Warehouse", "Land / Plot Lease", "Search by City", "List Your Property", "How it Works"] },
+  { id: "company", title: "Company", links: ["About us", "Contact", "Careers", "Blog", "Terms of Service", "Privacy Policy"] },
+  { id: "support", title: "Support", links: ["Help Center", "Enquiry", "Safety Tips", "Report a Listing", "FAQ", "Feedback"] },
+];
+
+/* ---------- Ask Property AI ---------- */
+export const AI_SUGGESTIONS = [
+  "Find properties in Delhi",
+  "Best areas for PG in Bangalore",
+  "Check rent agreement process",
+  "Tell me about farm land lease",
+];

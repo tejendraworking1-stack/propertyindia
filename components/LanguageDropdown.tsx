@@ -1,50 +1,13 @@
 "use client";
 
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useRef } from "react";
+import { placeBelowRight, useLanguagePanel } from "@/hooks/useLanguagePanel";
 
 /** Language control: only English is available for now, and the dropdown says so (as in the original). */
 export default function LanguageDropdown() {
-  const [open, setOpen] = useState(false);
-  const [pos, setPos] = useState<{ top: number; left: number } | null>(null);
   const btnRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
-
-  const place = useCallback(() => {
-    const btn = btnRef.current;
-    const panel = panelRef.current;
-    if (!btn || !panel) return;
-    const r = btn.getBoundingClientRect();
-    const w = panel.offsetWidth || 200;
-    setPos({ top: r.bottom + 6, left: Math.max(8, Math.min(window.innerWidth - w - 8, r.right - w)) });
-  }, []);
-
-  const close = useCallback((restoreFocus: boolean) => {
-    setOpen(false);
-    if (restoreFocus) btnRef.current?.focus();
-  }, []);
-
-  useLayoutEffect(() => {
-    if (open) place();
-  }, [open, place]);
-
-  useEffect(() => {
-    if (!open) return;
-    const onDocClick = () => close(false);
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") close(true);
-    };
-    const onScroll = () => place();
-    document.addEventListener("click", onDocClick);
-    document.addEventListener("keydown", onKey);
-    window.addEventListener("resize", place);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      document.removeEventListener("click", onDocClick);
-      document.removeEventListener("keydown", onKey);
-      window.removeEventListener("resize", place);
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, [open, close, place]);
+  const { open, pos, setOpen, close } = useLanguagePanel(btnRef, panelRef, placeBelowRight);
 
   return (
     <div className="lang-w">

@@ -1,0 +1,1732 @@
+{
+  "suite": "homepage-part2",
+  "tag": "visual",
+  "target": "http://localhost:3400/",
+  "aiTarget": null,
+  "referenceFile": "reference/propertyindia-home-v13-contrast.html",
+  "browser": "141.0.7390.37",
+  "browserExecutable": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+  "browserSource": "playwright-bundled",
+  "widths": [
+    320,
+    360,
+    380,
+    414,
+    430,
+    639,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "pixelLimitPct": 0.35,
+  "results": [
+    {
+      "name": "browser major version is 141",
+      "ok": true,
+      "detail": "141.0.7390.37"
+    },
+    {
+      "name": "320px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "320px layout locations: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 220.1/220.1, w 320.0/320.0, gap 12.0/12.0"
+    },
+    {
+      "name": "320px pixels locations: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 320,222 vs 320,222"
+    },
+    {
+      "name": "320px layout recent: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 458.4/458.4, w 320.0/320.0, gap 12.0/12.0"
+    },
+    {
+      "name": "320px pixels recent: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 320,459 vs 320,459"
+    },
+    {
+      "name": "320px layout how: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 232.4/232.4, w 320.0/320.0, gap 12.0/12.0"
+    },
+    {
+      "name": "320px pixels how: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 320,233 vs 320,233"
+    },
+    {
+      "name": "320px layout cta: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 139.6/139.6, w 320.0/320.0, gap 18.0/18.0"
+    },
+    {
+      "name": "320px pixels cta: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 320,141 vs 320,141"
+    },
+    {
+      "name": "320px layout footer: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 1103.3/1103.3, w 320.0/320.0, gap 16.0/16.0"
+    },
+    {
+      "name": "320px pixels footer: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 320,1104 vs 320,1104"
+    },
+    {
+      "name": "320px bottom nav visibility equals original",
+      "ok": true,
+      "detail": "target true, original true"
+    },
+    {
+      "name": "320px pixels bottom-nav: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 320,66 vs 320,66"
+    },
+    {
+      "name": "320px pixels ai-button: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 48,48 vs 48,48"
+    },
+    {
+      "name": "360px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "360px layout locations: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 219.8/219.8, w 360.0/360.0, gap 12.0/12.0"
+    },
+    {
+      "name": "360px pixels locations: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 360,221 vs 360,221"
+    },
+    {
+      "name": "360px layout recent: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 458.4/458.4, w 360.0/360.0, gap 12.0/12.0"
+    },
+    {
+      "name": "360px pixels recent: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 360,460 vs 360,460"
+    },
+    {
+      "name": "360px layout how: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 232.4/232.4, w 360.0/360.0, gap 12.0/12.0"
+    },
+    {
+      "name": "360px pixels how: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 360,233 vs 360,233"
+    },
+    {
+      "name": "360px layout cta: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 120.4/120.4, w 360.0/360.0, gap 18.0/18.0"
+    },
+    {
+      "name": "360px pixels cta: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 360,121 vs 360,121"
+    },
+    {
+      "name": "360px layout footer: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 1000.9/1000.9, w 360.0/360.0, gap 16.0/16.0"
+    },
+    {
+      "name": "360px pixels footer: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 360,1002 vs 360,1002"
+    },
+    {
+      "name": "360px bottom nav visibility equals original",
+      "ok": true,
+      "detail": "target true, original true"
+    },
+    {
+      "name": "360px pixels bottom-nav: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 360,66 vs 360,66"
+    },
+    {
+      "name": "360px pixels ai-button: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 48,48 vs 48,48"
+    },
+    {
+      "name": "380px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "380px layout locations: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 226.2/226.2, w 380.0/380.0, gap 12.0/12.0"
+    },
+    {
+      "name": "380px pixels locations: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 380,227 vs 380,227"
+    },
+    {
+      "name": "380px layout recent: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 458.4/458.4, w 380.0/380.0, gap 12.0/12.0"
+    },
+    {
+      "name": "380px pixels recent: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 380,460 vs 380,460"
+    },
+    {
+      "name": "380px layout how: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 232.4/232.4, w 380.0/380.0, gap 12.0/12.0"
+    },
+    {
+      "name": "380px pixels how: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 380,233 vs 380,233"
+    },
+    {
+      "name": "380px layout cta: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 120.4/120.4, w 380.0/380.0, gap 18.0/18.0"
+    },
+    {
+      "name": "380px pixels cta: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 380,122 vs 380,122"
+    },
+    {
+      "name": "380px layout footer: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 1000.9/1000.9, w 380.0/380.0, gap 16.0/16.0"
+    },
+    {
+      "name": "380px pixels footer: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 380,1001 vs 380,1001"
+    },
+    {
+      "name": "380px bottom nav visibility equals original",
+      "ok": true,
+      "detail": "target true, original true"
+    },
+    {
+      "name": "380px pixels bottom-nav: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 380,66 vs 380,66"
+    },
+    {
+      "name": "380px pixels ai-button: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 48,48 vs 48,48"
+    },
+    {
+      "name": "414px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "414px layout locations: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 237.1/237.1, w 414.0/414.0, gap 12.0/12.0"
+    },
+    {
+      "name": "414px pixels locations: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 414,238 vs 414,238"
+    },
+    {
+      "name": "414px layout recent: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 458.4/458.4, w 414.0/414.0, gap 12.0/12.0"
+    },
+    {
+      "name": "414px pixels recent: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 414,459 vs 414,459"
+    },
+    {
+      "name": "414px layout how: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 232.4/232.4, w 414.0/414.0, gap 12.0/12.0"
+    },
+    {
+      "name": "414px pixels how: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 414,234 vs 414,234"
+    },
+    {
+      "name": "414px layout cta: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 103.6/103.6, w 414.0/414.0, gap 18.0/18.0"
+    },
+    {
+      "name": "414px pixels cta: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 414,104 vs 414,104"
+    },
+    {
+      "name": "414px layout footer: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 962.2/962.2, w 414.0/414.0, gap 16.0/16.0"
+    },
+    {
+      "name": "414px pixels footer: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 414,963 vs 414,963"
+    },
+    {
+      "name": "414px bottom nav visibility equals original",
+      "ok": true,
+      "detail": "target true, original true"
+    },
+    {
+      "name": "414px pixels bottom-nav: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 414,66 vs 414,66"
+    },
+    {
+      "name": "414px pixels ai-button: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 48,48 vs 48,48"
+    },
+    {
+      "name": "430px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "430px layout locations: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 242.2/242.2, w 430.0/430.0, gap 12.0/12.0"
+    },
+    {
+      "name": "430px pixels locations: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 430,243 vs 430,243"
+    },
+    {
+      "name": "430px layout recent: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 458.4/458.4, w 430.0/430.0, gap 12.0/12.0"
+    },
+    {
+      "name": "430px pixels recent: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 430,459 vs 430,459"
+    },
+    {
+      "name": "430px layout how: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 232.4/232.4, w 430.0/430.0, gap 12.0/12.0"
+    },
+    {
+      "name": "430px pixels how: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 430,234 vs 430,234"
+    },
+    {
+      "name": "430px layout cta: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 103.6/103.6, w 430.0/430.0, gap 18.0/18.0"
+    },
+    {
+      "name": "430px pixels cta: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 430,104 vs 430,104"
+    },
+    {
+      "name": "430px layout footer: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 962.2/962.2, w 430.0/430.0, gap 16.0/16.0"
+    },
+    {
+      "name": "430px pixels footer: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 430,964 vs 430,964"
+    },
+    {
+      "name": "430px bottom nav visibility equals original",
+      "ok": true,
+      "detail": "target true, original true"
+    },
+    {
+      "name": "430px pixels bottom-nav: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 430,66 vs 430,66"
+    },
+    {
+      "name": "430px pixels ai-button: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 48,48 vs 48,48"
+    },
+    {
+      "name": "639px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "639px layout locations: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 309.1/309.1, w 639.0/639.0, gap 12.0/12.0"
+    },
+    {
+      "name": "639px pixels locations: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 639,310 vs 639,310"
+    },
+    {
+      "name": "639px layout recent: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 458.4/458.4, w 639.0/639.0, gap 12.0/12.0"
+    },
+    {
+      "name": "639px pixels recent: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 639,459 vs 639,459"
+    },
+    {
+      "name": "639px layout how: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 232.4/232.4, w 639.0/639.0, gap 12.0/12.0"
+    },
+    {
+      "name": "639px pixels how: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 639,234 vs 639,234"
+    },
+    {
+      "name": "639px layout cta: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 103.6/103.6, w 639.0/639.0, gap 18.0/18.0"
+    },
+    {
+      "name": "639px pixels cta: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 639,104 vs 639,104"
+    },
+    {
+      "name": "639px layout footer: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 941.2/941.2, w 639.0/639.0, gap 16.0/16.0"
+    },
+    {
+      "name": "639px pixels footer: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 639,942 vs 639,942"
+    },
+    {
+      "name": "639px bottom nav visibility equals original",
+      "ok": true,
+      "detail": "target true, original true"
+    },
+    {
+      "name": "639px pixels bottom-nav: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 639,66 vs 639,66"
+    },
+    {
+      "name": "639px pixels ai-button: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 48,48 vs 48,48"
+    },
+    {
+      "name": "768px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "768px layout locations: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 309.6/309.6, w 720.0/720.0, gap 14.0/14.0"
+    },
+    {
+      "name": "768px pixels locations: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 720,311 vs 720,311"
+    },
+    {
+      "name": "768px layout recent: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 370.4/370.4, w 720.0/720.0, gap 14.0/14.0"
+    },
+    {
+      "name": "768px pixels recent: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 720,371 vs 720,371"
+    },
+    {
+      "name": "768px layout how: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 167.6/167.6, w 720.0/720.0, gap 14.0/14.0"
+    },
+    {
+      "name": "768px pixels how: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 720,169 vs 720,169"
+    },
+    {
+      "name": "768px layout cta: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 131.1/131.1, w 768.0/768.0, gap 18.0/18.0"
+    },
+    {
+      "name": "768px pixels cta: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 768,132 vs 768,132"
+    },
+    {
+      "name": "768px layout footer: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 870.8/870.8, w 768.0/768.0, gap 16.0/16.0"
+    },
+    {
+      "name": "768px pixels footer: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 768,871 vs 768,871"
+    },
+    {
+      "name": "768px bottom nav visibility equals original",
+      "ok": true,
+      "detail": "target true, original true"
+    },
+    {
+      "name": "768px pixels bottom-nav: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 768,65 vs 768,65"
+    },
+    {
+      "name": "768px pixels ai-button: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 56,56 vs 56,56"
+    },
+    {
+      "name": "1024px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "1024px layout locations: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 330.2/330.2, w 988.0/988.0, gap 16.0/16.0"
+    },
+    {
+      "name": "1024px pixels locations: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 988,331 vs 988,331"
+    },
+    {
+      "name": "1024px layout recent: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 439.0/439.0, w 988.0/988.0, gap 16.0/16.0"
+    },
+    {
+      "name": "1024px pixels recent: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 988,440 vs 988,440"
+    },
+    {
+      "name": "1024px layout how: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 221.1/221.1, w 988.0/988.0, gap 16.0/16.0"
+    },
+    {
+      "name": "1024px pixels how: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 988,222 vs 988,222"
+    },
+    {
+      "name": "1024px layout cta: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 159.1/159.1, w 1024.0/1024.0, gap 34.0/34.0"
+    },
+    {
+      "name": "1024px pixels cta: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1024,160 vs 1024,160"
+    },
+    {
+      "name": "1024px layout footer: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 669.8/669.8, w 1024.0/1024.0, gap 30.0/30.0"
+    },
+    {
+      "name": "1024px pixels footer: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1024,671 vs 1024,671"
+    },
+    {
+      "name": "1024px bottom nav visibility equals original",
+      "ok": true,
+      "detail": "target false, original false"
+    },
+    {
+      "name": "1024px pixels ai-button: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 56,56 vs 56,56"
+    },
+    {
+      "name": "1280px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "1280px layout locations: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 329.2/329.2, w 1164.0/1164.0, gap 16.0/16.0"
+    },
+    {
+      "name": "1280px pixels locations: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1164,330 vs 1164,330"
+    },
+    {
+      "name": "1280px layout recent: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 439.0/439.0, w 1164.0/1164.0, gap 16.0/16.0"
+    },
+    {
+      "name": "1280px pixels recent: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1164,440 vs 1164,440"
+    },
+    {
+      "name": "1280px layout how: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 221.1/221.1, w 1164.0/1164.0, gap 16.0/16.0"
+    },
+    {
+      "name": "1280px pixels how: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1164,222 vs 1164,222"
+    },
+    {
+      "name": "1280px layout cta: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 159.1/159.1, w 1200.0/1200.0, gap 34.0/34.0"
+    },
+    {
+      "name": "1280px pixels cta: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1200,160 vs 1200,160"
+    },
+    {
+      "name": "1280px layout footer: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 648.8/648.8, w 1280.0/1280.0, gap 30.0/30.0"
+    },
+    {
+      "name": "1280px pixels footer: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1280,650 vs 1280,650"
+    },
+    {
+      "name": "1280px bottom nav visibility equals original",
+      "ok": true,
+      "detail": "target false, original false"
+    },
+    {
+      "name": "1280px pixels ai-button: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 56,56 vs 56,56"
+    },
+    {
+      "name": "1440px no horizontal overflow (page under test)",
+      "ok": true,
+      "detail": "overflow 0"
+    },
+    {
+      "name": "1440px layout locations: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 329.2/329.2, w 1164.0/1164.0, gap 16.0/16.0"
+    },
+    {
+      "name": "1440px pixels locations: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1164,330 vs 1164,330"
+    },
+    {
+      "name": "1440px layout recent: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 439.0/439.0, w 1164.0/1164.0, gap 16.0/16.0"
+    },
+    {
+      "name": "1440px pixels recent: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1164,440 vs 1164,440"
+    },
+    {
+      "name": "1440px layout how: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 221.1/221.1, w 1164.0/1164.0, gap 16.0/16.0"
+    },
+    {
+      "name": "1440px pixels how: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1164,222 vs 1164,222"
+    },
+    {
+      "name": "1440px layout cta: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 159.1/159.1, w 1200.0/1200.0, gap 34.0/34.0"
+    },
+    {
+      "name": "1440px pixels cta: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1200,160 vs 1200,160"
+    },
+    {
+      "name": "1440px layout footer: size and spacing equal original (±1px)",
+      "ok": true,
+      "detail": "h 612.8/612.8, w 1440.0/1440.0, gap 30.0/30.0"
+    },
+    {
+      "name": "1440px pixels footer: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed (0px), sizes 1440,614 vs 1440,614"
+    },
+    {
+      "name": "1440px bottom nav visibility equals original",
+      "ok": true,
+      "detail": "target false, original false"
+    },
+    {
+      "name": "1440px pixels ai-button: <= 0.35% changed",
+      "ok": true,
+      "detail": "0% changed, sizes 56,56 vs 56,56"
+    },
+    {
+      "name": "no external requests from the page under test (fonts, CDN)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no console errors / hydration errors on the page under test",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "visual": [
+    {
+      "width": 320,
+      "section": "locations",
+      "sizeA": [
+        320,
+        222
+      ],
+      "sizeB": [
+        320,
+        222
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 320,
+      "section": "recent",
+      "sizeA": [
+        320,
+        459
+      ],
+      "sizeB": [
+        320,
+        459
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 320,
+      "section": "how",
+      "sizeA": [
+        320,
+        233
+      ],
+      "sizeB": [
+        320,
+        233
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 320,
+      "section": "cta",
+      "sizeA": [
+        320,
+        141
+      ],
+      "sizeB": [
+        320,
+        141
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 320,
+      "section": "footer",
+      "sizeA": [
+        320,
+        1104
+      ],
+      "sizeB": [
+        320,
+        1104
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 320,
+      "section": "bottom-nav",
+      "sizeA": [
+        320,
+        66
+      ],
+      "sizeB": [
+        320,
+        66
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 320,
+      "section": "ai-button",
+      "sizeA": [
+        48,
+        48
+      ],
+      "sizeB": [
+        48,
+        48
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "locations",
+      "sizeA": [
+        360,
+        221
+      ],
+      "sizeB": [
+        360,
+        221
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "recent",
+      "sizeA": [
+        360,
+        460
+      ],
+      "sizeB": [
+        360,
+        460
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "how",
+      "sizeA": [
+        360,
+        233
+      ],
+      "sizeB": [
+        360,
+        233
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "cta",
+      "sizeA": [
+        360,
+        121
+      ],
+      "sizeB": [
+        360,
+        121
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "footer",
+      "sizeA": [
+        360,
+        1002
+      ],
+      "sizeB": [
+        360,
+        1002
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "bottom-nav",
+      "sizeA": [
+        360,
+        66
+      ],
+      "sizeB": [
+        360,
+        66
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 360,
+      "section": "ai-button",
+      "sizeA": [
+        48,
+        48
+      ],
+      "sizeB": [
+        48,
+        48
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "locations",
+      "sizeA": [
+        380,
+        227
+      ],
+      "sizeB": [
+        380,
+        227
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "recent",
+      "sizeA": [
+        380,
+        460
+      ],
+      "sizeB": [
+        380,
+        460
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "how",
+      "sizeA": [
+        380,
+        233
+      ],
+      "sizeB": [
+        380,
+        233
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "cta",
+      "sizeA": [
+        380,
+        122
+      ],
+      "sizeB": [
+        380,
+        122
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "footer",
+      "sizeA": [
+        380,
+        1001
+      ],
+      "sizeB": [
+        380,
+        1001
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "bottom-nav",
+      "sizeA": [
+        380,
+        66
+      ],
+      "sizeB": [
+        380,
+        66
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 380,
+      "section": "ai-button",
+      "sizeA": [
+        48,
+        48
+      ],
+      "sizeB": [
+        48,
+        48
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "locations",
+      "sizeA": [
+        414,
+        238
+      ],
+      "sizeB": [
+        414,
+        238
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "recent",
+      "sizeA": [
+        414,
+        459
+      ],
+      "sizeB": [
+        414,
+        459
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "how",
+      "sizeA": [
+        414,
+        234
+      ],
+      "sizeB": [
+        414,
+        234
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "cta",
+      "sizeA": [
+        414,
+        104
+      ],
+      "sizeB": [
+        414,
+        104
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "footer",
+      "sizeA": [
+        414,
+        963
+      ],
+      "sizeB": [
+        414,
+        963
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "bottom-nav",
+      "sizeA": [
+        414,
+        66
+      ],
+      "sizeB": [
+        414,
+        66
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 414,
+      "section": "ai-button",
+      "sizeA": [
+        48,
+        48
+      ],
+      "sizeB": [
+        48,
+        48
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "locations",
+      "sizeA": [
+        430,
+        243
+      ],
+      "sizeB": [
+        430,
+        243
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "recent",
+      "sizeA": [
+        430,
+        459
+      ],
+      "sizeB": [
+        430,
+        459
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "how",
+      "sizeA": [
+        430,
+        234
+      ],
+      "sizeB": [
+        430,
+        234
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "cta",
+      "sizeA": [
+        430,
+        104
+      ],
+      "sizeB": [
+        430,
+        104
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "footer",
+      "sizeA": [
+        430,
+        964
+      ],
+      "sizeB": [
+        430,
+        964
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "bottom-nav",
+      "sizeA": [
+        430,
+        66
+      ],
+      "sizeB": [
+        430,
+        66
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 430,
+      "section": "ai-button",
+      "sizeA": [
+        48,
+        48
+      ],
+      "sizeB": [
+        48,
+        48
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "locations",
+      "sizeA": [
+        639,
+        310
+      ],
+      "sizeB": [
+        639,
+        310
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "recent",
+      "sizeA": [
+        639,
+        459
+      ],
+      "sizeB": [
+        639,
+        459
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "how",
+      "sizeA": [
+        639,
+        234
+      ],
+      "sizeB": [
+        639,
+        234
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "cta",
+      "sizeA": [
+        639,
+        104
+      ],
+      "sizeB": [
+        639,
+        104
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "footer",
+      "sizeA": [
+        639,
+        942
+      ],
+      "sizeB": [
+        639,
+        942
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "bottom-nav",
+      "sizeA": [
+        639,
+        66
+      ],
+      "sizeB": [
+        639,
+        66
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 639,
+      "section": "ai-button",
+      "sizeA": [
+        48,
+        48
+      ],
+      "sizeB": [
+        48,
+        48
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "locations",
+      "sizeA": [
+        720,
+        311
+      ],
+      "sizeB": [
+        720,
+        311
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "recent",
+      "sizeA": [
+        720,
+        371
+      ],
+      "sizeB": [
+        720,
+        371
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "how",
+      "sizeA": [
+        720,
+        169
+      ],
+      "sizeB": [
+        720,
+        169
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "cta",
+      "sizeA": [
+        768,
+        132
+      ],
+      "sizeB": [
+        768,
+        132
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "footer",
+      "sizeA": [
+        768,
+        871
+      ],
+      "sizeB": [
+        768,
+        871
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "bottom-nav",
+      "sizeA": [
+        768,
+        65
+      ],
+      "sizeB": [
+        768,
+        65
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 768,
+      "section": "ai-button",
+      "sizeA": [
+        56,
+        56
+      ],
+      "sizeB": [
+        56,
+        56
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1024,
+      "section": "locations",
+      "sizeA": [
+        988,
+        331
+      ],
+      "sizeB": [
+        988,
+        331
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1024,
+      "section": "recent",
+      "sizeA": [
+        988,
+        440
+      ],
+      "sizeB": [
+        988,
+        440
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1024,
+      "section": "how",
+      "sizeA": [
+        988,
+        222
+      ],
+      "sizeB": [
+        988,
+        222
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1024,
+      "section": "cta",
+      "sizeA": [
+        1024,
+        160
+      ],
+      "sizeB": [
+        1024,
+        160
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1024,
+      "section": "footer",
+      "sizeA": [
+        1024,
+        671
+      ],
+      "sizeB": [
+        1024,
+        671
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1024,
+      "section": "ai-button",
+      "sizeA": [
+        56,
+        56
+      ],
+      "sizeB": [
+        56,
+        56
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1280,
+      "section": "locations",
+      "sizeA": [
+        1164,
+        330
+      ],
+      "sizeB": [
+        1164,
+        330
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1280,
+      "section": "recent",
+      "sizeA": [
+        1164,
+        440
+      ],
+      "sizeB": [
+        1164,
+        440
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1280,
+      "section": "how",
+      "sizeA": [
+        1164,
+        222
+      ],
+      "sizeB": [
+        1164,
+        222
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1280,
+      "section": "cta",
+      "sizeA": [
+        1200,
+        160
+      ],
+      "sizeB": [
+        1200,
+        160
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1280,
+      "section": "footer",
+      "sizeA": [
+        1280,
+        650
+      ],
+      "sizeB": [
+        1280,
+        650
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1280,
+      "section": "ai-button",
+      "sizeA": [
+        56,
+        56
+      ],
+      "sizeB": [
+        56,
+        56
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1440,
+      "section": "locations",
+      "sizeA": [
+        1164,
+        330
+      ],
+      "sizeB": [
+        1164,
+        330
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1440,
+      "section": "recent",
+      "sizeA": [
+        1164,
+        440
+      ],
+      "sizeB": [
+        1164,
+        440
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1440,
+      "section": "how",
+      "sizeA": [
+        1164,
+        222
+      ],
+      "sizeB": [
+        1164,
+        222
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1440,
+      "section": "cta",
+      "sizeA": [
+        1200,
+        160
+      ],
+      "sizeB": [
+        1200,
+        160
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1440,
+      "section": "footer",
+      "sizeA": [
+        1440,
+        614
+      ],
+      "sizeB": [
+        1440,
+        614
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    },
+    {
+      "width": 1440,
+      "section": "ai-button",
+      "sizeA": [
+        56,
+        56
+      ],
+      "sizeB": [
+        56,
+        56
+      ],
+      "changed": 0,
+      "pct": 0,
+      "bbox": null
+    }
+  ]
+}

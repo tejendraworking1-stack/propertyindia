@@ -24,8 +24,13 @@ const KEEP_MAX_FEATURED = 1280; // from this width the Featured section is an ap
 mkdirSync(`${OUT}/visual`, { recursive: true });
 
 const results = [];
-const check = (name, ok, detail = "") => results.push({ name, ok: !!ok, detail: String(detail).slice(0, 600) });
+const check = (name, ok, detail = "") => results.push({ name, ok: !!ok, detail: String(detail).slice(0, 1500) });
 const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+const diffKeys = (a, b) => {
+  if (a === undefined || b === undefined) return "no result";
+  const keys = [...new Set([...Object.keys(a ?? {}), ...Object.keys(b ?? {})])].filter((k) => JSON.stringify(a?.[k]) !== JSON.stringify(b?.[k]));
+  return keys.slice(0, 3).map((k) => `step "${k}": page ${JSON.stringify(a?.[k])} | original ${JSON.stringify(b?.[k])}`).join(" ;; ");
+};
 
 // ---------- browser selection (same rules as foundation.mjs; recorded in results.json)
 function resolveBrowser() {
@@ -92,8 +97,9 @@ async function open(url, width, { isTarget, context = {}, clock = false } = {}) 
   if (clock) await page.clock.install();
   await page.goto(url, { waitUntil: "load" });
   // Comparison only: the ORIGINAL also contains Part 2 elements (mobile bottom bar, Ask Property AI) that overlay the
-  // sections above them. They are not part of Part 1, so they are hidden on the reference page.
-  if (!isTarget) await page.addStyleTag({ content: ".bar,.ai,.aip{display:none!important}" });
+  // sections above them. They are not part of Part 1 sections, so they are hidden on both pages.
+  // (Since Part 2 exists the page under test has them too, so they are hidden on both pages.)
+  await page.addStyleTag({ content: ".bar,.ai,.aip{display:none!important}" });
   await page.evaluate(() => document.fonts.ready);
   await page.waitForTimeout(500);
   return { ctx, page };
@@ -242,7 +248,7 @@ for (const w of [380, 1024]) {
       const t = await open(TARGET, w, { isTarget: true }); const r = await open(REFERENCE, w, { isTarget: false });
       a = await fn(t.page); b = await fn(r.page); await t.ctx.close(); await r.ctx.close();
     } catch (e) { err = String(e).slice(0, 300); }
-    check(`${w}px interaction "${name}" matches original`, !err && same(a, b), err || (same(a, b) ? "identical" : `target ${JSON.stringify(a)} | original ${JSON.stringify(b)}`));
+    check(`${w}px interaction "${name}" matches original`, !err && same(a, b), err || (same(a, b) ? "identical" : diffKeys(a, b)));
   }
 }
 // search validation with a fake clock (5s auto-clear)
@@ -259,7 +265,7 @@ for (const w of [380, 1024]) {
   };
   let a, b, err = "";
   try { const t = await open(TARGET, 380, { isTarget: true, clock: true }); const r = await open(REFERENCE, 380, { isTarget: false, clock: true }); a = await run(t.page); b = await run(r.page); await t.ctx.close(); await r.ctx.close(); } catch (e) { err = String(e).slice(0, 300); }
-  check('interaction "search validation + 5s clear" matches original', !err && same(a, b), err || (same(a, b) ? "identical" : `target ${JSON.stringify(a)} | original ${JSON.stringify(b)}`));
+  check('interaction "search validation + 5s clear" matches original', !err && same(a, b), err || (same(a, b) ? "identical" : diffKeys(a, b)));
 }
 // GPS: denied and success (Nominatim is mocked; no real network request is made)
 for (const mode of ["denied", "success"]) {
@@ -272,7 +278,7 @@ for (const mode of ["denied", "success"]) {
   const ctxOpts = mode === "success" ? { permissions: ["geolocation"], geolocation: { latitude: 12.9698, longitude: 77.75 } } : {};
   let a, b, err = "";
   try { const t = await open(TARGET, 380, { isTarget: true, context: ctxOpts }); const r = await open(REFERENCE, 380, { isTarget: false, context: ctxOpts }); a = await run(t.page); b = await run(r.page); await t.ctx.close(); await r.ctx.close(); } catch (e) { err = String(e).slice(0, 300); }
-  check(`interaction "GPS ${mode}" matches original`, !err && same(a, b), err || (same(a, b) ? JSON.stringify(a) : `target ${JSON.stringify(a)} | original ${JSON.stringify(b)}`));
+  check(`interaction "GPS ${mode}" matches original`, !err && same(a, b), err || (same(a, b) ? JSON.stringify(a) : diffKeys(a, b)));
 }
 
 check("no external requests from the page under test (fonts, CDN)", external.size === 0, [...external].slice(0, 5).join(" | "));

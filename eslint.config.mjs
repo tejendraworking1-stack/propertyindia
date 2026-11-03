@@ -26,7 +26,7 @@ const config = [
   },
   // Playwright page.evaluate() callbacks run in the browser, so DOM globals are legitimate here.
   {
-    files: ["scripts/tests/foundation.mjs", "scripts/tests/homepage-part1.mjs"],
+    files: ["scripts/tests/foundation.mjs", "scripts/tests/homepage-part1.mjs", "scripts/tests/homepage-part2.mjs", "scripts/tests/lib/compare.mjs"],
     languageOptions: { globals: { ...globals.node, ...globals.browser } },
   },
 ];

@@ -73,3 +73,8 @@ docs/               Tailwind decision + verified 3.4 fallback
 Header, Hero, Search (4 tabs), Why Choose, Featured Properties. See `docs/PART1-REPORT.md` for scope, deliberate
 differences and the honest split between harness tests (run) and real Next.js tests (to be run by you).
 Original stylesheet: `app/home.css` (verbatim). Original page for comparison tests: `reference/`.
+
+## Homepage Part 2 (this delivery)
+
+Popular Locations, Recently Added, How it works, List CTA, Footer, bottom nav, Ask Property AI. See `docs/PART2-REPORT.md`.
+Ask Property AI: set `NEXT_PUBLIC_AI_ENDPOINT` when a backend exists (contract in `hooks/useAskPropertyAi.ts`); empty = "not connected" message.
